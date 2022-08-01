@@ -1,0 +1,8 @@
+library IEEE;
+use IEEE.
+
+
+entity NOTGate is
+	port(i : in std_logic;
+		o : our std_logic);
+end NOTGate;

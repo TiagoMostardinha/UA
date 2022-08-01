@@ -1,0 +1,26 @@
+import java.util.*;
+
+public class teste {
+	
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int ano = sc.nextInt();
+		int mes = sc.nextInt();
+		int dia = sc.nextInt();
+		
+		Data a = new Data(ano,mes,dia);
+		
+		System.out.println(a.d(),a.m(),a.a());
+	}
+}
+
+class Data{
+	private int d,m,a;
+	
+	public Data(){
+		this.d = d;
+		this.m = m;
+		this.a = a;
+	}
+}
+

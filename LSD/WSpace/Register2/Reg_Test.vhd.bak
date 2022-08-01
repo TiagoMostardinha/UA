@@ -1,0 +1,17 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity Reg_Test is
+port(CLOCK_50 : std_logic;
+	SW : in std_logic_vector(4 downto 0);
+	LEDR : out std_logic_vector(4 downto 0));
+end Reg_Test;
+
+architecture Structural of Reg_Test is
+begin
+	entity work.Reg_5x5 is
+	port map(clk => CLOCK_50,
+				din => SW,
+				dout => LEDR);
+end Behavorial;
+	

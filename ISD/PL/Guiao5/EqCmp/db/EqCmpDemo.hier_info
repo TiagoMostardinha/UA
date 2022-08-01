@@ -1,0 +1,84 @@
+|EqCmp16Demo
+out0 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+in0[0] => EqCmpDemo:inst.input0[0]
+in0[1] => EqCmpDemo:inst.input0[1]
+in0[2] => EqCmpDemo:inst.input0[2]
+in0[3] => EqCmpDemo:inst.input0[3]
+in0[4] => EqCmpDemo:inst1.input0[0]
+in0[5] => EqCmpDemo:inst1.input0[1]
+in0[6] => EqCmpDemo:inst1.input0[2]
+in0[7] => EqCmpDemo:inst1.input0[3]
+in0[8] => EqCmpDemo:inst2.input0[0]
+in0[9] => EqCmpDemo:inst2.input0[1]
+in0[10] => EqCmpDemo:inst2.input0[2]
+in0[11] => EqCmpDemo:inst2.input0[3]
+in0[12] => EqCmpDemo:inst3.input0[0]
+in0[13] => EqCmpDemo:inst3.input0[1]
+in0[14] => EqCmpDemo:inst3.input0[2]
+in0[15] => EqCmpDemo:inst3.input0[3]
+in1[0] => EqCmpDemo:inst.input1[0]
+in1[1] => EqCmpDemo:inst.input1[1]
+in1[2] => EqCmpDemo:inst.input1[2]
+in1[3] => EqCmpDemo:inst.input1[3]
+in1[4] => EqCmpDemo:inst1.input1[0]
+in1[5] => EqCmpDemo:inst1.input1[1]
+in1[6] => EqCmpDemo:inst1.input1[2]
+in1[7] => EqCmpDemo:inst1.input1[3]
+in1[8] => EqCmpDemo:inst2.input1[0]
+in1[9] => EqCmpDemo:inst2.input1[1]
+in1[10] => EqCmpDemo:inst2.input1[2]
+in1[11] => EqCmpDemo:inst2.input1[3]
+in1[12] => EqCmpDemo:inst3.input1[0]
+in1[13] => EqCmpDemo:inst3.input1[1]
+in1[14] => EqCmpDemo:inst3.input1[2]
+in1[15] => EqCmpDemo:inst3.input1[3]
+
+
+|EqCmp16Demo|EqCmpDemo:inst
+output <= and0.DB_MAX_OUTPUT_PORT_TYPE
+input0[0] => xor0.IN0
+input0[1] => xor1.IN0
+input0[2] => xor2.IN0
+input0[3] => xor3.IN0
+input1[0] => xor0.IN1
+input1[1] => xor1.IN1
+input1[2] => xor2.IN1
+input1[3] => xor3.IN1
+
+
+|EqCmp16Demo|EqCmpDemo:inst1
+output <= and0.DB_MAX_OUTPUT_PORT_TYPE
+input0[0] => xor0.IN0
+input0[1] => xor1.IN0
+input0[2] => xor2.IN0
+input0[3] => xor3.IN0
+input1[0] => xor0.IN1
+input1[1] => xor1.IN1
+input1[2] => xor2.IN1
+input1[3] => xor3.IN1
+
+
+|EqCmp16Demo|EqCmpDemo:inst2
+output <= and0.DB_MAX_OUTPUT_PORT_TYPE
+input0[0] => xor0.IN0
+input0[1] => xor1.IN0
+input0[2] => xor2.IN0
+input0[3] => xor3.IN0
+input1[0] => xor0.IN1
+input1[1] => xor1.IN1
+input1[2] => xor2.IN1
+input1[3] => xor3.IN1
+
+
+|EqCmp16Demo|EqCmpDemo:inst3
+output <= and0.DB_MAX_OUTPUT_PORT_TYPE
+input0[0] => xor0.IN0
+input0[1] => xor1.IN0
+input0[2] => xor2.IN0
+input0[3] => xor3.IN0
+input1[0] => xor0.IN1
+input1[1] => xor1.IN1
+input1[2] => xor2.IN1
+input1[3] => xor3.IN1
+
+

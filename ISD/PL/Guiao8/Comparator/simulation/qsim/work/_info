@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/PL/Guiao8/Comparator/simulation/qsim
+vCmp4Demo
+!s110 1639132585
+!i10b 1
+!s100 C=>hi6h^QIcdli?d4EmhL0
+IaQI51b`M6DLOLmf4>RbcH3
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639132585
+Z2 8CmpDemo.vo
+Z3 FCmpDemo.vo
+Z4 L0 31
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z6 !s108 1639132585.000000
+Z7 !s107 CmpDemo.vo|
+Z8 !s90 -work|work|CmpDemo.vo|
+!i113 1
+Z9 o-work work
+Z10 tCvgOpt 0
+n@cmp4@demo
+vCmp4Demo_vlg_vec_tst
+!s110 1639132586
+!i10b 1
+!s100 hko9_96fHLnlg]4^R6Vc?1
+I3F^aCA8JXcTSK;3od59JH2
+R1
+R0
+w1639132583
+8Cmp4_Test.vwf.vt
+FCmp4_Test.vwf.vt
+Z11 L0 29
+R5
+r1
+!s85 0
+31
+R6
+!s107 Cmp4_Test.vwf.vt|
+!s90 -work|work|Cmp4_Test.vwf.vt|
+!i113 1
+R9
+R10
+n@cmp4@demo_vlg_vec_tst
+vCmpDemo
+Z12 !s110 1639131271
+!i10b 1
+!s100 C^8:YkI9WDOc0=UPYNcF80
+I1C@6KGHcPWS]mWkjgBTGG3
+R1
+R0
+Z13 w1639131270
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z14 !s108 1639131271.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@cmp@demo
+vCmpDemo_vlg_vec_tst
+R12
+!i10b 1
+!s100 O8:>j7XkfiE6i94dd^DCH2
+IDY1e5^L9mJaTnPf2J:mTX0
+R1
+R0
+w1639131269
+8CmpDemo_Test.vwf.vt
+FCmpDemo_Test.vwf.vt
+R11
+R5
+r1
+!s85 0
+31
+R14
+!s107 CmpDemo_Test.vwf.vt|
+!s90 -work|work|CmpDemo_Test.vwf.vt|
+!i113 1
+R9
+R10
+n@cmp@demo_vlg_vec_tst
+vCmpSignedDemo
+Z15 !s110 1639133487
+!i10b 1
+!s100 GIANJblA0<0e@FeoSJ`Fc0
+IUa3_fGoj9BG6?^jLWZiRP0
+R1
+R0
+w1639133486
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z16 !s108 1639133487.000000
+R7
+R8
+!i113 1
+R9
+R10
+n@cmp@signed@demo
+vCmpSignedDemo_vlg_vec_tst
+R15
+!i10b 1
+!s100 =M3oJ7::mH<JegPFNZDTo0
+IU:4YgF;Y`OS72B;WCo[@R2
+R1
+R0
+w1639133485
+8CmpSigned_Test.vwf.vt
+FCmpSigned_Test.vwf.vt
+R11
+R5
+r1
+!s85 0
+31
+R16
+!s107 CmpSigned_Test.vwf.vt|
+!s90 -work|work|CmpSigned_Test.vwf.vt|
+!i113 1
+R9
+R10
+n@cmp@signed@demo_vlg_vec_tst
+vhard_block
+R12
+!i10b 1
+!s100 OV]iSODTef78[Xg2`eH<61
+IX3AjF_o=YcTg8a5g0RLW<1
+R1
+R0
+R13
+R2
+R3
+L0 237
+R5
+r1
+!s85 0
+31
+R14
+R7
+R8
+!i113 1
+R9
+R10

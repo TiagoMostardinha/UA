@@ -1,0 +1,407 @@
+$comment
+	File created using the following command:
+		vcd file Mux2_1.msim.vcd -direction
+$end
+$date
+	Fri Nov 26 10:20:01 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module MuxDemo2_vlg_vec_tst $end
+$var reg 16 ! inp [15:0] $end
+$var reg 4 " sel [3:0] $end
+$var wire 1 # out0 $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * out0~output_o $end
+$var wire 1 + inp[14]~input_o $end
+$var wire 1 , sel[1]~input_o $end
+$var wire 1 - sel[0]~input_o $end
+$var wire 1 . inp[12]~input_o $end
+$var wire 1 / inst|mux14|inst3~7_combout $end
+$var wire 1 0 inp[13]~input_o $end
+$var wire 1 1 inp[15]~input_o $end
+$var wire 1 2 inst|mux14|inst3~8_combout $end
+$var wire 1 3 inp[5]~input_o $end
+$var wire 1 4 inp[6]~input_o $end
+$var wire 1 5 inp[4]~input_o $end
+$var wire 1 6 inst|mux14|inst3~2_combout $end
+$var wire 1 7 inp[7]~input_o $end
+$var wire 1 8 inst|mux14|inst3~3_combout $end
+$var wire 1 9 sel[3]~input_o $end
+$var wire 1 : sel[2]~input_o $end
+$var wire 1 ; inp[2]~input_o $end
+$var wire 1 < inp[1]~input_o $end
+$var wire 1 = inp[0]~input_o $end
+$var wire 1 > inst|mux14|inst3~4_combout $end
+$var wire 1 ? inp[3]~input_o $end
+$var wire 1 @ inst|mux14|inst3~5_combout $end
+$var wire 1 A inst|mux14|inst3~6_combout $end
+$var wire 1 B inp[10]~input_o $end
+$var wire 1 C inp[8]~input_o $end
+$var wire 1 D inp[9]~input_o $end
+$var wire 1 E inst|mux14|inst3~0_combout $end
+$var wire 1 F inp[11]~input_o $end
+$var wire 1 G inst|mux14|inst3~1_combout $end
+$var wire 1 H inst|mux14|inst3~9_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1100111111000011 !
+b1111 "
+1#
+0$
+1%
+x&
+1'
+1(
+1)
+1*
+1+
+1,
+1-
+0.
+1/
+00
+11
+12
+03
+14
+05
+16
+17
+18
+19
+1:
+0;
+1<
+1=
+1>
+0?
+0@
+1A
+1B
+1C
+1D
+1E
+1F
+1G
+1H
+$end
+#100000
+b111 "
+b11 "
+b1 "
+b1110111111000011 !
+b1111111111000011 !
+b1111011111000011 !
+b1111010111000011 !
+b1111010011000011 !
+b1111010001000011 !
+b1111010001001011 !
+b1111010001001111 !
+1;
+1?
+07
+0C
+0D
+0F
+1.
+10
+0,
+0:
+09
+1@
+08
+0E
+0/
+06
+0A
+1A
+0G
+0H
+0*
+0#
+1H
+1*
+1#
+#200000
+b0 "
+b1011010001001111 !
+b1011010001101111 !
+b1011010001101110 !
+b1000 "
+b1100 "
+b1110 "
+b1011110001101110 !
+b1011111001101110 !
+b1011111011101110 !
+b1011111011100110 !
+b1011111011100010 !
+0=
+0;
+0?
+13
+17
+1D
+1F
+0+
+0-
+1,
+1:
+19
+0>
+0@
+1G
+16
+02
+18
+0H
+0*
+0#
+#300000
+b11111011100010 !
+b11111010100010 !
+b11111010100000 !
+b1111 "
+b111111010100000 !
+b111111010000000 !
+b111 "
+b111011010000000 !
+1-
+09
+0<
+03
+04
+0F
+1+
+01
+1E
+1>
+12
+1/
+1H
+1*
+0G
+02
+1#
+#400000
+b111001010000000 !
+b101001010000000 !
+b100001010000000 !
+b11 "
+b100001000000000 !
+b100001000000100 !
+b1100001000000100 !
+b1100001001000100 !
+b1100001001000110 !
+b1000001001000110 !
+b1000101001000110 !
+0:
+1<
+1;
+14
+07
+0B
+1F
+0.
+00
+0+
+11
+0A
+08
+1G
+12
+0H
+0*
+0#
+#500000
+b1000101101000110 !
+b1000101101000111 !
+b1000100101000111 !
+b1000100101001111 !
+b10 "
+b1010 "
+b1001100101001111 !
+b1110 "
+b1001100100001111 !
+b1001000100001111 !
+0-
+1:
+19
+1=
+1?
+04
+1C
+0D
+0F
+1.
+0E
+0>
+18
+06
+0/
+1A
+1@
+0G
+1H
+1*
+08
+02
+1#
+0H
+0*
+0#
+#600000
+b1001000100011111 !
+b1001001100011111 !
+b1111 "
+b111 "
+b1001001101011111 !
+1-
+09
+15
+14
+1D
+1E
+1>
+16
+1/
+0A
+1H
+1*
+12
+1#
+0H
+0*
+0#
+#700000
+b101 "
+b1001011101011111 !
+b1011011101011111 !
+b1011011111011111 !
+b1011011111011011 !
+b1011011111011001 !
+b1011011011011001 !
+b1011011011011000 !
+b1011011011010000 !
+b1010011011010000 !
+b1010111011010000 !
+b1010110011010000 !
+b1101 "
+0=
+0<
+0;
+0?
+17
+0C
+0D
+1B
+1F
+0.
+10
+0,
+19
+0>
+18
+0E
+1G
+0/
+06
+1A
+0@
+0G
+08
+1H
+1*
+1#
+#800000
+b10110011010000 !
+b1001 "
+b1011 "
+b110011010000 !
+b110001010000 !
+b110101010000 !
+b110101011000 !
+b1110101011000 !
+b1010101011000 !
+b11 "
+1,
+0:
+09
+1?
+07
+1C
+0F
+1.
+00
+01
+1G
+1E
+1>
+16
+1/
+0A
+02
+0G
+1@
+0H
+0*
+1A
+0#
+1H
+1*
+1#
+#900000
+b101010101011000 !
+b101010101001000 !
+b10 "
+b101010100001000 !
+b101000100001000 !
+b101000100001100 !
+b101000100001110 !
+b101001100001110 !
+b1101001100001110 !
+b110 "
+b1101001110001110 !
+b1101001010001110 !
+b1110 "
+0-
+1:
+19
+1<
+1;
+05
+04
+17
+0C
+1D
+0B
+1+
+11
+0E
+0>
+18
+06
+12
+0H
+0*
+08
+0#
+1H
+1*
+1#
+#1000000

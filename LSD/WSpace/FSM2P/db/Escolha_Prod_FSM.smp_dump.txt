@@ -1,0 +1,10 @@
+
+State Machine - |Block3|Escolha_Prod_FSM:inst|s_currentState
+Name s_currentState.St_Spes s_currentState.St_Soli s_currentState.St_Fan s_currentState.Done s_currentState.Option s_currentState.Boot s_currentState.Init 
+s_currentState.Init 0 0 0 0 0 0 0 
+s_currentState.Boot 0 0 0 0 0 1 1 
+s_currentState.Option 0 0 0 0 1 0 1 
+s_currentState.Done 0 0 0 1 0 0 1 
+s_currentState.St_Fan 0 0 1 0 0 0 1 
+s_currentState.St_Soli 0 1 0 0 0 0 1 
+s_currentState.St_Spes 1 0 0 0 0 0 1 

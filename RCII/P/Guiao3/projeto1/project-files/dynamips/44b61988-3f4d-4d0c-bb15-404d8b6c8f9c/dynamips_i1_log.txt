@@ -1,0 +1,39 @@
+Apr 08 14:20:14.034 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 08 14:20:14.034 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60072.
+Apr 08 14:20:14.122 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 08 14:20:14.122 HYPERVISOR: exec_cmd: hypervisor working_dir D:\UA\RCII\P\Guiao3\projeto1\project-files\dynamips 
+Apr 08 14:20:14.127 GENERAL: working_dir=D:\UA\RCII\P\Guiao3\projeto1\project-files\dynamips
+Apr 08 14:20:14.127 HYPERVISOR: exec_cmd: ethsw create netA 
+Apr 08 14:20:19.695 HYPERVISOR: exec_cmd: nio create_udp udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 10011 127.0.0.1 10010 
+Apr 08 14:20:19.695 HYPERVISOR: exec_cmd: ethsw add_nio netA udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 
+Apr 08 14:20:19.712 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 1 
+Apr 08 14:20:19.770 HYPERVISOR: exec_cmd: nio create_udp udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 10014 127.0.0.1 10015 
+Apr 08 14:20:19.770 HYPERVISOR: exec_cmd: ethsw add_nio netA udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 
+Apr 08 14:20:19.786 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 1 
+Apr 08 14:30:44.088 HYPERVISOR: exec_cmd: nio bind_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 capture 
+Apr 08 14:30:44.089 HYPERVISOR: exec_cmd: nio setup_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\R1_FastEthernet11_to_netA_Ethernet0.pcap 
+Apr 08 14:31:05.965 HYPERVISOR: exec_cmd: nio unbind_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 
+Apr 08 14:31:39.809 HYPERVISOR: exec_cmd: nio bind_filter udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 2 capture 
+Apr 08 14:31:39.809 HYPERVISOR: exec_cmd: nio setup_filter udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\netA_Ethernet1_to_R2_FastEthernet10.pcap 
+Apr 08 14:32:05.379 HYPERVISOR: exec_cmd: nio unbind_filter udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 2 
+Apr 08 14:32:13.223 HYPERVISOR: exec_cmd: nio bind_filter udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 2 capture 
+Apr 08 14:32:13.224 HYPERVISOR: exec_cmd: nio setup_filter udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\netA_Ethernet1_to_R2_FastEthernet10.pcap 
+Apr 08 14:54:06.245 HYPERVISOR: exec_cmd: nio bind_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 capture 
+Apr 08 14:54:06.246 HYPERVISOR: exec_cmd: nio setup_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\R1_FastEthernet11_to_netA_Ethernet0.pcap 
+Apr 08 14:54:21.814 HYPERVISOR: exec_cmd: nio unbind_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 
+Apr 08 14:54:27.016 HYPERVISOR: exec_cmd: nio unbind_filter udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 2 
+Apr 08 14:54:47.988 HYPERVISOR: exec_cmd: nio bind_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 capture 
+Apr 08 14:54:47.988 HYPERVISOR: exec_cmd: nio setup_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\R1_FastEthernet11_to_netA_Ethernet0.pcap 
+Apr 08 15:01:33.948 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 1 
+Apr 08 15:01:33.952 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 1 
+Apr 08 15:01:48.077 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 1 
+Apr 08 15:01:48.086 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 1 
+Apr 08 15:01:48.950 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 1 
+Apr 08 15:01:49.056 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 1 
+Apr 08 15:01:51.521 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 1 
+Apr 08 15:01:51.627 HYPERVISOR: exec_cmd: ethsw set_access_port netA udp-983fa8c0-7774-4c2e-9184-17a1ce220d51 1 
+Apr 08 15:16:29.322 HYPERVISOR: exec_cmd: nio unbind_filter udp-e77ab0f4-460c-467d-8623-0b2aae9c3767 2 
+Apr 08 15:55:41.848 HYPERVISOR: exec_cmd: ethsw delete netA 
+Apr 08 15:55:41.894 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 08 15:55:42.154 HYPERVISOR: Stopped.
+Apr 08 15:55:42.156 GENERAL: reset done.
