@@ -1,0 +1,40 @@
+# do Mux2_1Demo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:35 on Mar 17,2021
+# vcom -work work Mux2_1Demo.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Mux2_1
+# -- Compiling architecture structure of Mux2_1
+# End time: 11:05:35 on Mar 17,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 11:05:35 on Mar 17,2021
+# vcom -work work Mux2_1D.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Mux2_1_vhd_vec_tst
+# -- Compiling architecture Mux2_1_arch of Mux2_1_vhd_vec_tst
+# End time: 11:05:35 on Mar 17,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Mux2_1Demo_vhd_vec_tst 
+# Start time: 11:05:35 on Mar 17,2021
+# ** Error: (vsim-3170) Could not find 'Mux2_1Demo_vhd_vec_tst'.
+#         Searched libraries:
+#             c:/users/tiago/discod/intel/modelsim_ase/altera/vhdl/cycloneive
+#             c:/users/tiago/discod/intel/modelsim_ase/altera/vhdl/altera
+#             c:/users/tiago/discod/intel/modelsim_ase/altera/vhdl/altera_mf
+#             c:/users/tiago/discod/intel/modelsim_ase/altera/vhdl/220model
+#             c:/users/tiago/discod/intel/modelsim_ase/altera/vhdl/sgate
+#             c:/users/tiago/discod/intel/modelsim_ase/altera/vhdl/altera_lnsim
+#             C:/Users/tiago/DiscoD/UA/LSD/Aula_01/Parte2/simulation/qsim/work
+# Error loading design
+# End time: 11:05:35 on Mar 17,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0

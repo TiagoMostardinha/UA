@@ -1,0 +1,11 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity NANDGate is
+	port(in0 : in std_logic;
+		in1 : in std_logic;
+		out0 : our std_logic);
+end NANDGate;
+
+architecture Structural of NANDGate is
+signal 

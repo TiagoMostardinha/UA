@@ -1,0 +1,417 @@
+$comment
+	File created using the following command:
+		vcd file Mux4_1Demo.msim.vcd -direction
+$end
+$date
+	Wed Mar 17 11:15:34 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux4_1_vhd_vec_tst $end
+$var wire 1 ! inputs [3] $end
+$var wire 1 " inputs [2] $end
+$var wire 1 # inputs [1] $end
+$var wire 1 $ inputs [0] $end
+$var wire 1 % muxOut $end
+$var wire 1 & sel [1] $end
+$var wire 1 ' sel [0] $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var wire 1 + devoe $end
+$var wire 1 , devclrn $end
+$var wire 1 - devpor $end
+$var wire 1 . ww_devoe $end
+$var wire 1 / ww_devclrn $end
+$var wire 1 0 ww_devpor $end
+$var wire 1 1 ww_sel [1] $end
+$var wire 1 2 ww_sel [0] $end
+$var wire 1 3 ww_inputs [3] $end
+$var wire 1 4 ww_inputs [2] $end
+$var wire 1 5 ww_inputs [1] $end
+$var wire 1 6 ww_inputs [0] $end
+$var wire 1 7 ww_muxOut $end
+$var wire 1 8 \muxOut~output_o\ $end
+$var wire 1 9 \inputs[2]~input_o\ $end
+$var wire 1 : \sel[1]~input_o\ $end
+$var wire 1 ; \inputs[1]~input_o\ $end
+$var wire 1 < \sel[0]~input_o\ $end
+$var wire 1 = \inputs[0]~input_o\ $end
+$var wire 1 > \Mux0~0_combout\ $end
+$var wire 1 ? \inputs[3]~input_o\ $end
+$var wire 1 @ \Mux0~1_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1%
+0(
+1)
+x*
+1+
+1,
+1-
+1.
+1/
+10
+17
+18
+09
+0:
+1;
+1<
+0=
+1>
+1?
+1@
+1!
+0"
+1#
+0$
+0&
+1'
+01
+12
+13
+04
+15
+06
+$end
+#40000
+0!
+1&
+0'
+03
+02
+11
+1:
+0<
+0?
+0>
+0@
+08
+07
+0%
+#80000
+1!
+0&
+1'
+1"
+14
+13
+12
+01
+0:
+1<
+1?
+19
+1>
+1@
+18
+17
+1%
+#120000
+1&
+0'
+0#
+1$
+02
+11
+16
+05
+0;
+1=
+1:
+0<
+0>
+#160000
+1'
+1#
+0$
+12
+06
+15
+1;
+0=
+1<
+1>
+#200000
+0'
+1$
+0&
+0!
+0"
+02
+01
+16
+04
+03
+0?
+09
+1=
+0:
+0<
+#240000
+1&
+1!
+0#
+11
+05
+13
+1?
+0;
+1:
+0>
+0@
+08
+07
+0%
+#280000
+0&
+01
+0:
+1>
+1@
+18
+17
+1%
+#320000
+1&
+1'
+12
+11
+1:
+1<
+#360000
+0!
+0$
+1"
+06
+14
+03
+0?
+19
+0=
+0@
+08
+07
+0%
+#400000
+1!
+1$
+0&
+1#
+16
+15
+13
+01
+0:
+1?
+1;
+1=
+1@
+18
+17
+1%
+#440000
+0$
+1&
+0#
+0"
+06
+05
+04
+11
+1:
+09
+0;
+0=
+#480000
+0!
+03
+0?
+0@
+08
+07
+0%
+#520000
+1"
+0'
+14
+02
+0<
+19
+0>
+1@
+18
+17
+1%
+#560000
+1!
+1#
+15
+13
+1?
+1;
+#600000
+0#
+0"
+05
+04
+09
+0;
+0@
+08
+07
+0%
+#640000
+1"
+0!
+1$
+0&
+16
+14
+03
+01
+0:
+0?
+19
+1=
+1>
+1@
+18
+17
+1%
+#680000
+1&
+1#
+1'
+12
+11
+15
+1;
+1:
+1<
+0@
+08
+07
+0%
+#720000
+0&
+0#
+0'
+0"
+1!
+02
+01
+05
+04
+13
+1?
+09
+0;
+0:
+0<
+1@
+18
+17
+1%
+#760000
+1&
+1'
+1"
+0!
+12
+11
+14
+03
+0?
+19
+1:
+1<
+0@
+08
+07
+0%
+#800000
+0'
+0"
+1!
+1#
+0$
+02
+06
+15
+04
+13
+1?
+09
+1;
+0=
+0<
+0>
+1@
+0@
+18
+17
+08
+1%
+07
+0%
+#840000
+1'
+0!
+1$
+0&
+12
+01
+16
+03
+0?
+1=
+0:
+1<
+1>
+1@
+18
+17
+1%
+#880000
+1!
+1&
+0#
+05
+13
+11
+1:
+1?
+0;
+#920000
+0&
+0'
+02
+01
+0:
+0<
+#960000
+1&
+1'
+0$
+1"
+12
+11
+06
+14
+19
+0=
+1:
+1<
+#1000000

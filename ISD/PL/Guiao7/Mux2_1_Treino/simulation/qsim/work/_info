@@ -1,0 +1,119 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/PL/Guiao7/Mux2_1_Treino/simulation/qsim
+vhard_block
+Z1 !s110 1639575871
+!i10b 1
+!s100 :cKL9mU4k]mmd_ZLzmia01
+I<4HcnmEn6YBe3ZW5MH9A71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1639575870
+Z4 8MuxDemo.vo
+Z5 FMuxDemo.vo
+L0 187
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1639575871.000000
+Z8 !s107 MuxDemo.vo|
+Z9 !s90 -work|work|MuxDemo.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vMux8_1
+R1
+!i10b 1
+!s100 EDeA>YSnF2jmX_]eciADo3
+I9BUgXB_X5Rc9PK]Z9Hfng2
+R2
+R0
+R3
+R4
+R5
+Z12 L0 31
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux8_1
+vMux8_1_vlg_vec_tst
+R1
+!i10b 1
+!s100 A^@M]M;e@[[>RM5CnCR^92
+IdaO^=H@a9dLZ[`g:n=O@[1
+R2
+R0
+w1639575868
+8Mux8_1_Test.vwf.vt
+FMux8_1_Test.vwf.vt
+Z13 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Mux8_1_Test.vwf.vt|
+!s90 -work|work|Mux8_1_Test.vwf.vt|
+!i113 1
+R10
+R11
+n@mux8_1_vlg_vec_tst
+vMuxDemo
+Z14 !s110 1639574593
+!i10b 1
+!s100 >SD8zQ]Al5Vfh5`BRXVKe3
+I?@@=>_HQ8jSmg4Iloz1h[2
+R2
+R0
+w1639574589
+R4
+R5
+R12
+R6
+r1
+!s85 0
+31
+Z15 !s108 1639574593.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@mux@demo
+vMuxDemo_vlg_vec_tst
+R14
+!i10b 1
+!s100 jYGWOZ^9Yc;_5iLT_`?3N2
+IaTIagS:d?BnK]?[a0Zm5L2
+R2
+R0
+w1639574588
+8Mux2_1_Test.vwf.vt
+FMux2_1_Test.vwf.vt
+R13
+R6
+r1
+!s85 0
+31
+R15
+!s107 Mux2_1_Test.vwf.vt|
+!s90 -work|work|Mux2_1_Test.vwf.vt|
+!i113 1
+R10
+R11
+n@mux@demo_vlg_vec_tst

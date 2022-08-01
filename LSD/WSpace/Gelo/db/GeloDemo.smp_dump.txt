@@ -1,0 +1,7 @@
+
+State Machine - |Gelo_Block|Gelo_FSM:inst|PS
+Name PS.g3 PS.g2 PS.g1 PS.g0 
+PS.g0 0 0 0 0 
+PS.g1 0 0 1 1 
+PS.g2 0 1 0 1 
+PS.g3 1 0 0 1 

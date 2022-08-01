@@ -1,0 +1,10 @@
+
+State Machine - |FSM_Main|PS
+Name PS.e6 PS.e5 PS.e4 PS.e3 PS.e2 PS.e1 PS.e0 
+PS.e0 0 0 0 0 0 0 0 
+PS.e1 0 0 0 0 0 1 1 
+PS.e2 0 0 0 0 1 0 1 
+PS.e3 0 0 0 1 0 0 1 
+PS.e4 0 0 1 0 0 0 1 
+PS.e5 0 1 0 0 0 0 1 
+PS.e6 1 0 0 0 0 0 1 

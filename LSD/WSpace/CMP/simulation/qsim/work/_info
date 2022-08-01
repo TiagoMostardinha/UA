@@ -1,0 +1,182 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/LSD/WSpace/CMP/simulation/qsim
+Ecmp2
+Z1 w1619196939
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8CmpDemo.vho
+Z9 FCmpDemo.vho
+l0
+L34
+V<8e9RMAjE[>mc>kTF]heC0
+!s100 49Ka4LXA6eH`HM>Gcj=S;2
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1619196939
+!i10b 1
+Z12 !s108 1619196939.000000
+Z13 !s90 -work|work|CmpDemo.vho|
+Z14 !s107 CmpDemo.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 4 cmp2 0 22 <8e9RMAjE[>mc>kTF]heC0
+l71
+L44
+VaRe_T^K;MZSP:[Bb_n:5o3
+!s100 cY8^<QXOK0Zi>]S9NN99;2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Ecmp2_nop
+Z17 w1619342028
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+VUPNMNT[^K=_32a[Kn^nCU2
+!s100 T?6OIl8ZZi36?G?;kW]bk2
+R10
+32
+Z18 !s110 1619342029
+!i10b 1
+Z19 !s108 1619342029.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 cmp2_nop 0 22 UPNMNT[^K=_32a[Kn^nCU2
+l71
+L44
+Vbid>lj5BC^?_EY[;lFIdz0
+!s100 [fB5^e@n_57V;CL[IV<Fm0
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Ecmp2_nop_vhd_vec_tst
+Z20 w1619342027
+R5
+R6
+R0
+Z21 8Cmp_wP.vwf.vht
+Z22 FCmp_wP.vwf.vht
+l0
+L31
+VzIXZLe9lz;c[WAFETSoOj3
+!s100 A2m@YGl;e]n=_bzMW7dGe3
+R10
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -work|work|Cmp_wP.vwf.vht|
+Z24 !s107 Cmp_wP.vwf.vht|
+!i113 1
+R15
+R16
+Acmp2_nop_arch
+R5
+R6
+Z25 DEx4 work 20 cmp2_nop_vhd_vec_tst 0 22 zIXZLe9lz;c[WAFETSoOj3
+l50
+L33
+Z26 V7639G1C4OYKZ>gI17H:<U1
+Z27 !s100 nlgNgJWin4?W^=^khSUNP0
+R10
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R15
+R16
+Ecmp2_vhd_vec_tst
+Z28 w1619196937
+R5
+R6
+R0
+Z29 8Cmp2.vwf.vht
+Z30 FCmp2.vwf.vht
+l0
+L31
+V?RQ:8b[3bY@DM03F:zezK3
+!s100 TFP8P:29ImWY6SNPMBY`E1
+R10
+32
+Z31 !s110 1619196940
+!i10b 1
+R12
+Z32 !s90 -work|work|Cmp2.vwf.vht|
+Z33 !s107 Cmp2.vwf.vht|
+!i113 1
+R15
+R16
+Acmp2_arch
+R5
+R6
+DEx4 work 16 cmp2_vhd_vec_tst 0 22 ?RQ:8b[3bY@DM03F:zezK3
+l50
+L33
+VoD8fX78FWDCOTV=?n4WY^1
+!s100 gneTFRJMOhYc73JC6oVQ43
+R10
+32
+R31
+!i10b 1
+R12
+R32
+R33
+!i113 1
+R15
+R16
