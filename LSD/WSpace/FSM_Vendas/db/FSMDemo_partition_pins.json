@@ -1,0 +1,85 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "NewTime",
+					"strict" : false
+				},
+				{
+					"name" : "TimeValue[1]",
+					"strict" : false
+				},
+				{
+					"name" : "TimeValue[2]",
+					"strict" : false
+				},
+				{
+					"name" : "TimeValue[3]",
+					"strict" : false
+				},
+				{
+					"name" : "TimerEnable",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_Word[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_Word[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Sel_Word[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Ledr",
+					"strict" : false
+				},
+				{
+					"name" : "Ledg",
+					"strict" : false
+				},
+				{
+					"name" : "debug[0]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[1]",
+					"strict" : false
+				},
+				{
+					"name" : "debug[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Time_exp",
+					"strict" : false
+				},
+				{
+					"name" : "rst",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "SumoPes",
+					"strict" : false
+				},
+				{
+					"name" : "SumoLi",
+					"strict" : false
+				},
+				{
+					"name" : "Fanta",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

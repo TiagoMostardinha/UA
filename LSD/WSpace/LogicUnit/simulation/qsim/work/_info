@@ -1,0 +1,164 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/LSD/WSpace/LogicUnit/simulation/qsim
+Elogicdemo1
+Z1 w1619018728
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8LogicUnit.vho
+Z9 FLogicUnit.vho
+l0
+L34
+V9oQRmHiG[m28F<a<_i@;:3
+!s100 8lh0f:k<n>k53>zCK99F12
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1619018729
+!i10b 1
+Z12 !s108 1619018728.000000
+Z13 !s90 -work|work|LogicUnit.vho|
+Z14 !s107 LogicUnit.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 10 logicdemo1 0 22 9oQRmHiG[m28F<a<_i@;:3
+l78
+L46
+ViCHV6hBf1=9C@e6gPU=692
+!s100 _e>Q@nOMW=jVl]<0C?kR92
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Elogicdemo1_vhd_vec_tst
+w1619018726
+R5
+R6
+R0
+8Waveform.vwf.vht
+FWaveform.vwf.vht
+l0
+L31
+V7l?LZMzObIKPTG76@QnX;1
+!s100 ]8^b@JXm`HSH4961d3ceJ3
+R10
+32
+R11
+!i10b 1
+!s108 1619018729.000000
+!s90 -work|work|Waveform.vwf.vht|
+!s107 Waveform.vwf.vht|
+!i113 1
+R15
+R16
+Elogicunit
+Z17 w1619018529
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+VD`ZjkI_7;0===mV1LFoHO3
+!s100 YLdoc3df]79lERSIl^`n:3
+R10
+32
+Z18 !s110 1619018533
+!i10b 1
+Z19 !s108 1619018533.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 logicunit 0 22 D`ZjkI_7;0===mV1LFoHO3
+l80
+L47
+VQk]h5zQ@@f`lSC@VcUQ?A1
+!s100 S5k61fH7=FRjE0eL0c2dC0
+R10
+32
+R18
+!i10b 1
+R19
+R13
+R14
+!i113 1
+R15
+R16
+Elogicunit_vhd_vec_tst
+Z20 w1619018528
+R5
+R6
+R0
+Z21 8LogicUnit.vwf.vht
+Z22 FLogicUnit.vwf.vht
+l0
+L31
+VnSBgLQ8Xl^amT@fNVLhb:2
+!s100 JPjCV]o^_aDnHBB=k@TYA2
+R10
+32
+R18
+!i10b 1
+R19
+Z23 !s90 -work|work|LogicUnit.vwf.vht|
+Z24 !s107 LogicUnit.vwf.vht|
+!i113 1
+R15
+R16
+Alogicunit_arch
+R5
+R6
+DEx4 work 21 logicunit_vhd_vec_tst 0 22 nSBgLQ8Xl^amT@fNVLhb:2
+l56
+L33
+V`i6gbN@W<Rd_KgBKKIg4o2
+!s100 m@fA9FHK`NUT=jST]Sim>2
+R10
+32
+R18
+!i10b 1
+R19
+R23
+R24
+!i113 1
+R15
+R16

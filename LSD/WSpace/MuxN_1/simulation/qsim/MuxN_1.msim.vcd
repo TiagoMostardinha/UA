@@ -1,0 +1,323 @@
+$comment
+	File created using the following command:
+		vcd file MuxN_1.msim.vcd -direction
+$end
+$date
+	Sat Apr 24 15:16:57 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module mux2_1_nop_vhd_vec_tst $end
+$var wire 1 ! in0 [1] $end
+$var wire 1 " in0 [0] $end
+$var wire 1 # in1 [1] $end
+$var wire 1 $ in1 [0] $end
+$var wire 1 % out0 [1] $end
+$var wire 1 & out0 [0] $end
+$var wire 1 ' sel $end
+
+$scope module i1 $end
+$var wire 1 ( gnd $end
+$var wire 1 ) vcc $end
+$var wire 1 * unknown $end
+$var wire 1 + devoe $end
+$var wire 1 , devclrn $end
+$var wire 1 - devpor $end
+$var wire 1 . ww_devoe $end
+$var wire 1 / ww_devclrn $end
+$var wire 1 0 ww_devpor $end
+$var wire 1 1 ww_in0 [1] $end
+$var wire 1 2 ww_in0 [0] $end
+$var wire 1 3 ww_in1 [1] $end
+$var wire 1 4 ww_in1 [0] $end
+$var wire 1 5 ww_sel $end
+$var wire 1 6 ww_out0 [1] $end
+$var wire 1 7 ww_out0 [0] $end
+$var wire 1 8 \out0[0]~output_o\ $end
+$var wire 1 9 \out0[1]~output_o\ $end
+$var wire 1 : \in1[0]~input_o\ $end
+$var wire 1 ; \in0[0]~input_o\ $end
+$var wire 1 < \sel~input_o\ $end
+$var wire 1 = \out0~0_combout\ $end
+$var wire 1 > \in1[1]~input_o\ $end
+$var wire 1 ? \in0[1]~input_o\ $end
+$var wire 1 @ \out0~1_combout\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1'
+0(
+1)
+x*
+1+
+1,
+1-
+1.
+1/
+10
+15
+08
+19
+0:
+1;
+1<
+0=
+1>
+1?
+1@
+1!
+1"
+1#
+0$
+11
+12
+13
+04
+16
+07
+1%
+0&
+$end
+#40000
+0"
+1$
+02
+14
+1:
+0;
+1=
+18
+17
+1&
+#80000
+0$
+0!
+0#
+04
+03
+01
+0?
+0>
+0:
+0=
+0@
+09
+08
+06
+07
+0&
+0%
+#120000
+0'
+05
+0<
+#160000
+1$
+1!
+14
+11
+1?
+1:
+1@
+19
+16
+1%
+#200000
+1#
+13
+1>
+#240000
+1"
+12
+1;
+1=
+18
+17
+1&
+#280000
+0$
+0!
+04
+01
+0?
+0:
+0@
+09
+06
+0%
+#320000
+1$
+14
+1:
+#360000
+1!
+0"
+02
+11
+1?
+0;
+0=
+1@
+19
+08
+16
+07
+0&
+1%
+#400000
+1"
+0$
+0#
+12
+04
+03
+0>
+0:
+1;
+1=
+18
+17
+1&
+#440000
+0!
+01
+0?
+0@
+09
+06
+0%
+#480000
+1!
+1$
+1'
+11
+14
+15
+1<
+1:
+1?
+#560000
+0!
+01
+0?
+#600000
+1!
+11
+1?
+#640000
+0!
+0$
+0"
+02
+01
+04
+0:
+0?
+0;
+0=
+08
+07
+0&
+#680000
+1$
+1"
+1#
+14
+13
+12
+1;
+1>
+1:
+1@
+1=
+18
+19
+17
+16
+1&
+1%
+#720000
+0$
+1!
+04
+11
+1?
+0:
+0=
+08
+07
+0&
+#760000
+1$
+0"
+14
+02
+0;
+1:
+1=
+18
+17
+1&
+#800000
+0!
+0#
+01
+03
+0>
+0?
+0@
+09
+06
+0%
+#840000
+0$
+1"
+04
+12
+1;
+0:
+0=
+08
+07
+0&
+#880000
+1!
+1#
+11
+13
+1>
+1?
+1@
+19
+16
+1%
+#920000
+0#
+03
+0>
+0@
+09
+06
+0%
+#960000
+1#
+0!
+0"
+13
+02
+01
+0?
+0;
+1>
+1@
+19
+16
+1%
+#1000000

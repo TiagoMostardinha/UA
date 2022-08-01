@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tiago/DiscoD/UA/ISD/PL/Guiao11/2sFSM/2sFSM.bdf
+source_file = 1, C:/Users/tiago/DiscoD/UA/ISD/PL/Guiao11/2sFSM/2sFSM_test.vwf
+source_file = 1, C:/Users/tiago/DiscoD/UA/ISD/PL/Guiao11/2sFSM/db/2sFSM.cbx.xml
+design_name = \2sFSM 
+instance = comp, \y~output , y~output, \2sFSM , 1
+instance = comp, \clk~input , clk~input, \2sFSM , 1
+instance = comp, \x~input , x~input, \2sFSM , 1
+instance = comp, \inst2~0 , inst2~0, \2sFSM , 1
+design_name = hard_block
+instance = comp, \~ALTERA_ASDO_DATA1~~ibuf , ~ALTERA_ASDO_DATA1~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_FLASH_nCE_nCSO~~ibuf , ~ALTERA_FLASH_nCE_nCSO~~ibuf, hard_block, 1
+instance = comp, \~ALTERA_DATA0~~ibuf , ~ALTERA_DATA0~~ibuf, hard_block, 1

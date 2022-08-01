@@ -1,0 +1,100 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/LSD/WSpace/ClkDiv/simulation/qsim
+Eclkdividern
+Z1 w1624010537
+Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z3 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z5 DPx6 altera 11 dffeas_pack 0 22 ?bDUB9Db2N8iCCALNL;CT3
+Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z8 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z9 DPx6 altera 28 altera_primitives_components 0 22 c]VUMXSEi8Z`KM1bem<:B3
+R0
+Z10 8ClkDividerDemo.vho
+Z11 FClkDividerDemo.vho
+l0
+L36
+VDhmooVoCB<hOj0SS_k1iI3
+!s100 fCbIET^ZCbS^iNcTJHQ><3
+Z12 OV;C;10.5b;63
+32
+Z13 !s110 1624010543
+!i10b 1
+Z14 !s108 1624010543.000000
+Z15 !s90 -work|work|ClkDividerDemo.vho|
+Z16 !s107 ClkDividerDemo.vho|
+!i113 1
+Z17 o-work work
+Z18 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+R8
+R9
+DEx4 work 11 clkdividern 0 22 DhmooVoCB<hOj0SS_k1iI3
+l66
+L44
+VkPQ[Q_`XlAf7aEA`WdlG11
+!s100 I^OPR6^IzTeLgn`C:ShYI3
+R12
+32
+R13
+!i10b 1
+R14
+R15
+R16
+!i113 1
+R17
+R18
+Eclkdividern_vhd_vec_tst
+Z19 w1624010536
+R7
+R8
+R0
+Z20 8ClkDividerN.vwf.vht
+Z21 FClkDividerN.vwf.vht
+l0
+L31
+VKRle4QZZL;UZNRFVb6NkF2
+!s100 7g>2^_QcBUGNVfjikaRVG1
+R12
+32
+Z22 !s110 1624010544
+!i10b 1
+Z23 !s108 1624010544.000000
+Z24 !s90 -work|work|ClkDividerN.vwf.vht|
+Z25 !s107 ClkDividerN.vwf.vht|
+!i113 1
+R17
+R18
+Aclkdividern_arch
+R7
+R8
+Z26 DEx4 work 23 clkdividern_vhd_vec_tst 0 22 KRle4QZZL;UZNRFVb6NkF2
+l46
+L33
+Z27 Vc45Vb@FEf2dDj2DjJIBQ:2
+Z28 !s100 2FFa?0]O?2nfCHBdc9E;z1
+R12
+32
+R22
+!i10b 1
+R23
+R24
+R25
+!i113 1
+R17
+R18

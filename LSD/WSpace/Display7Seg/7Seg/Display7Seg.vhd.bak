@@ -1,0 +1,11 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+entity Display7Seg is 
+	port( SW : in std_logic_vector(3 downto 0);
+	      HEX : out std_logic_vector(15 downto 0));
+end Display7Seg;	
+architecture Structural of Display7Seg is 
+signal bit3, bit2, bit1, bit0 : std_logic_vector(3 downto 0);
+begin
+block1 : entity work.bin7seg_buffer(Behavioral) is
+         portmap()

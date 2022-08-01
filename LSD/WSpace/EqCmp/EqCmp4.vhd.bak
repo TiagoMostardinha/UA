@@ -1,0 +1,9 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity EqCmp4 is
+
+	port(inPort0 : in std_logic_vector(3 down to  0)
+		inPort1 : in std_logic_vector(3 down to  0)); 
+		
+end EqCmp4;

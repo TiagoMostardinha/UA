@@ -1,0 +1,28 @@
+|Block1
+y[0] <= DecoderDemo3:inst.y[0]
+y[1] <= DecoderDemo3:inst.y[1]
+y[2] <= DecoderDemo3:inst.y[2]
+y[3] <= DecoderDemo3:inst.y[3]
+in[0] => DecoderDemo3:inst.x[0]
+in[1] => DecoderDemo3:inst.x[1]
+
+
+|Block1|DecoderDemo3:inst
+y[0] <= inst.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= inst10.DB_MAX_OUTPUT_PORT_TYPE
+y[2] <= inst11.DB_MAX_OUTPUT_PORT_TYPE
+y[3] <= inst12.DB_MAX_OUTPUT_PORT_TYPE
+x[0] => inst9.IN0
+x[0] => inst10.IN0
+x[0] => inst8.IN0
+x[0] => inst12.IN2
+x[1] => inst5.IN0
+x[1] => inst7.IN0
+x[1] => inst11.IN2
+x[1] => inst12.IN0
+En => inst.IN1
+En => inst10.IN1
+En => inst11.IN1
+En => inst12.IN1
+
+
