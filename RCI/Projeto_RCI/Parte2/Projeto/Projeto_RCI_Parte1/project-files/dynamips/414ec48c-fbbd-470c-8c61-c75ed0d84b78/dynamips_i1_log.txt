@@ -1,0 +1,56 @@
+Feb 02 18:09:47.741 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Feb 02 18:09:47.745 HYPERVISOR: Started on IP = localhost, TCP port = 56241.
+Feb 02 18:09:48.039 HYPERVISOR: exec_cmd: hypervisor version 
+Feb 02 18:09:48.039 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\tiago\Desktop\Projeto_RCI\Parte2\Projeto\Projeto_RCI_Parte1\project-files\dynamips 
+Feb 02 18:09:48.039 GENERAL: working_dir=C:\Users\tiago\Desktop\Projeto_RCI\Parte2\Projeto\Projeto_RCI_Parte1\project-files\dynamips
+Feb 02 18:09:48.039 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\tiago\Desktop\Projeto_RCI\Parte2\Projeto\Projeto_RCI_Parte1\project-files\dynamips\414ec48c-fbbd-470c-8c61-c75ed0d84b78 
+Feb 02 18:09:48.039 GENERAL: working_dir=C:\Users\tiago\Desktop\Projeto_RCI\Parte2\Projeto\Projeto_RCI_Parte1\project-files\dynamips\414ec48c-fbbd-470c-8c61-c75ed0d84b78
+Feb 02 18:09:48.039 HYPERVISOR: exec_cmd: vm create R1 1 c7200 
+Feb 02 18:09:48.055 VM: VM R1 created.
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5005 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: c7200 get_mac_addr R1 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm slot_add_binding R1 0 0 C7200-IO-FE 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_exec_area R1 64 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60792d4c 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_ios R1 C:/Users/tiago/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: c7200 set_mac_addr R1 ca01.239c.0000 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_nvram R1 512 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm set_ram R1 512 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:09:48.055 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 PA-2FE-TX 
+Feb 02 18:09:51.126 HYPERVISOR: exec_cmd: nio create_udp udp-2f592e52-3015-4f64-afa2-cbba1adf5aed 10004 127.0.0.1 10005 
+Feb 02 18:09:51.407 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-2f592e52-3015-4f64-afa2-cbba1adf5aed 
+Feb 02 18:09:51.407 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:09:51.976 HYPERVISOR: exec_cmd: nio create_udp udp-9d2a3220-bb6e-4bde-b7d2-382d677e58fc 10024 127.0.0.1 10025 
+Feb 02 18:09:51.976 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-9d2a3220-bb6e-4bde-b7d2-382d677e58fc 
+Feb 02 18:09:51.976 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:10:36.192 HYPERVISOR: exec_cmd: vm create Ghost 0 c7200 
+Feb 02 18:10:36.192 VM: VM Ghost created.
+Feb 02 18:10:36.192 HYPERVISOR: exec_cmd: vm set_ios Ghost C:/Users/tiago/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Feb 02 18:10:36.192 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Feb 02 18:10:36.192 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost C:\Users\tiago\Desktop\Projeto_RCI\Parte2\Projeto\Projeto_RCI_Parte1\project-files\dynamips\c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Feb 02 18:10:36.192 HYPERVISOR: exec_cmd: vm set_ram Ghost 512 
+Feb 02 18:10:36.192 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 02 18:10:36.225 HYPERVISOR: exec_cmd: vm set_config Ghost configs\i0_startup-config.cfg 
+Feb 02 18:10:36.225 HYPERVISOR: exec_cmd: vm start Ghost 
+Feb 02 18:10:36.661 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Feb 02 18:10:36.677 HYPERVISOR: exec_cmd: vm stop Ghost 
+Feb 02 18:10:36.936 VM: VM Ghost shutdown.
+Feb 02 18:10:36.938 HYPERVISOR: exec_cmd: vm extract_config Ghost 
+Feb 02 18:10:36.940 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Feb 02 18:10:36.940 VM: VM Ghost destroyed.
+Feb 02 18:10:36.951 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Feb 02 18:10:36.951 HYPERVISOR: exec_cmd: vm set_ghost_file R1 C:\Users\tiago\Desktop\Projeto_RCI\Parte2\Projeto\Projeto_RCI_Parte1\project-files\dynamips\c7200-jk9o3s-mz.123-8.T.bin-512.ghost 
+Feb 02 18:10:36.955 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:10:36.956 HYPERVISOR: exec_cmd: vm set_config R1 configs\i1_startup-config.cfg 
+Feb 02 18:10:36.956 HYPERVISOR: exec_cmd: vm start R1 
+Feb 02 18:10:49.098 HYPERVISOR: exec_cmd: vm get_status R1 
+Feb 02 18:10:49.099 HYPERVISOR: exec_cmd: vm stop R1 
+Feb 02 18:10:49.241 VM: VM R1 shutdown.
+Feb 02 18:10:49.242 HYPERVISOR: exec_cmd: vm extract_config R1 
+Feb 02 18:11:00.157 HYPERVISOR: Stopped.
+Feb 02 18:11:00.157 VM: VM R1 destroyed.
+Feb 02 18:11:00.159 GENERAL: reset done.

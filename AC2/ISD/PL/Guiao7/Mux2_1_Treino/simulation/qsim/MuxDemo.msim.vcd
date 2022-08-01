@@ -1,0 +1,162 @@
+$comment
+	File created using the following command:
+		vcd file MuxDemo.msim.vcd -direction
+$end
+$date
+	Wed Dec 15 13:44:32 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module Mux8_1_vlg_vec_tst $end
+$var reg 2 ! s [1:0] $end
+$var reg 4 " x [0:3] $end
+$var wire 1 # y $end
+
+$scope module i1 $end
+$var wire 1 $ gnd $end
+$var wire 1 % vcc $end
+$var wire 1 & unknown $end
+$var tri1 1 ' devclrn $end
+$var tri1 1 ( devpor $end
+$var tri1 1 ) devoe $end
+$var wire 1 * y~output_o $end
+$var wire 1 + s[1]~input_o $end
+$var wire 1 , x[1]~input_o $end
+$var wire 1 - x[0]~input_o $end
+$var wire 1 . x[3]~input_o $end
+$var wire 1 / s[0]~input_o $end
+$var wire 1 0 x[2]~input_o $end
+$var wire 1 1 inst2|inst2~0_combout $end
+$var wire 1 2 inst2|inst2~1_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b11 !
+b100 "
+0#
+0$
+1%
+x&
+1'
+1(
+1)
+0*
+1+
+1,
+0-
+0.
+1/
+00
+11
+02
+$end
+#100000
+b10 !
+b101 "
+b1101 "
+1.
+1-
+0/
+01
+12
+1*
+1#
+#200000
+b1111 "
+b1011 "
+b11 !
+b11 "
+1/
+10
+0,
+0-
+11
+02
+0*
+0#
+#300000
+b1 !
+b10 "
+b110 "
+b0 !
+b1110 "
+0.
+1,
+1-
+0/
+0+
+01
+12
+1*
+1#
+02
+0*
+0#
+#400000
+b1100 "
+b1101 "
+b1 !
+b101 "
+1/
+1.
+00
+0-
+#500000
+b1 "
+b0 !
+0/
+0,
+11
+12
+1*
+1#
+#600000
+b10 !
+b11 "
+b10 "
+b1010 "
+b1110 "
+0.
+10
+1,
+1-
+1+
+01
+#700000
+b11 !
+b1 !
+b1100 "
+b1000 "
+00
+0,
+1/
+0+
+02
+0*
+0#
+#800000
+b1001 "
+b1 "
+b0 !
+0/
+1.
+0-
+11
+12
+1*
+1#
+#900000
+b10 !
+b1001 "
+b11 !
+1-
+1/
+1+
+#1000000

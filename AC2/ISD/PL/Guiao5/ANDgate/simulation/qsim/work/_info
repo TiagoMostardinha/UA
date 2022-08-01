@@ -1,0 +1,54 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/PL/Guiao5/ANDgate/simulation/qsim
+vANDgate
+Z1 !s110 1636711495
+!i10b 1
+!s100 R7>6jknb9NH6X8YCMVER73
+I1T]@?S^0XHjY48Adk`>;P0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1636711494
+8ANDgate.vo
+FANDgate.vo
+L0 31
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1636711495.000000
+!s107 ANDgate.vo|
+!s90 -work|work|ANDgate.vo|
+!i113 1
+Z5 o-work work
+Z6 tCvgOpt 0
+n@a@n@dgate
+vANDgate_vlg_vec_tst
+R1
+!i10b 1
+!s100 l2o=<8@VGWA_DeZ;oAh8n3
+I_SeQHogAn:ZE=]<@bfXQ70
+R2
+R0
+w1636711493
+8ANDgate.vwf.vt
+FANDgate.vwf.vt
+L0 29
+R3
+r1
+!s85 0
+31
+R4
+!s107 ANDgate.vwf.vt|
+!s90 -work|work|ANDgate.vwf.vt|
+!i113 1
+R5
+R6
+n@a@n@dgate_vlg_vec_tst

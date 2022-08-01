@@ -1,0 +1,117 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/Teste/Counter/simulation/qsim
+vcount2
+Z1 !s110 1643136920
+!i10b 1
+!s100 :8[G7`KmSVi56EKTHGHIV0
+IJ>[4?[R@ngnY=R7ZDg[gE2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1643136919
+Z4 8Counter4.vo
+Z5 FCounter4.vo
+Z6 L0 31
+Z7 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z8 !s108 1643136920.000000
+Z9 !s107 Counter4.vo|
+Z10 !s90 -work|work|Counter4.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vcount2_vlg_vec_tst
+R1
+!i10b 1
+!s100 doN:IT?kl>YJ1Lo[mIK4;2
+Ik=Wi3OdT8`41`ZI?cYSB13
+R2
+R0
+w1643136918
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z13 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vCounter4
+Z14 !s110 1643131984
+!i10b 1
+!s100 @_kWz=b5=LLLZS>_WI;zA3
+IV_=l9VbglTVJ2eC<^i>YS0
+R2
+R0
+w1643131983
+R4
+R5
+R6
+R7
+r1
+!s85 0
+31
+Z15 !s108 1643131984.000000
+R9
+R10
+!i113 1
+R11
+R12
+n@counter4
+vCounter4_vlg_vec_tst
+R14
+!i10b 1
+!s100 VjW1VDA3GhR3k6:I@QAHN3
+I5z:2LO`CI9eMoLf]E:n>d0
+R2
+R0
+w1643131982
+8Counter4_test.vwf.vt
+FCounter4_test.vwf.vt
+R13
+R7
+r1
+!s85 0
+31
+R15
+!s107 Counter4_test.vwf.vt|
+!s90 -work|work|Counter4_test.vwf.vt|
+!i113 1
+R11
+R12
+n@counter4_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 :5;`fJ3]QO[fVP6aAk5O:1
+IKQOfdK0>ze:2[JnbFA[>42
+R2
+R0
+R3
+R4
+R5
+L0 473
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
