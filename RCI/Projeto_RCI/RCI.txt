@@ -1,5 +1,0 @@
-2 vm x
-dns
-http x
-sockets x
-html
