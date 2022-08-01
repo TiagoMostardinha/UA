@@ -1,0 +1,101 @@
+Git Basics
+
+1. Sign in
+	a) git config --global user.name "Tiago Mostardinha"
+	b) git config --global user.email "tiago.mostardinha@ua.pt"
+
+2. Create Repository
+	a) CREATE AN EMPTY FILE AND GET INTO IT
+	b) CHECK git status TO SEE IF THE TREE IS OK
+	c) git init TO INITIALIZE THE REPOSITORY
+
+OPTIONAL: git status
+
+3. Add and Commit
+	a) CHECK git status
+	b) git add xxx.x yyy.y ... OR git add . (ALL)
+	c) git commit -m "PUT A COMMENT"
+
+OPTIONAL: git status
+
+4. Commit History and get Previous Versions
+	a) git log PRINTS IN TERMINAL THE HISTORY OF COMMITS			(git log -p PRINT THE CHANGES IN EACH COMMIT)
+	b) COPY THE COMMIT ID AND THEN git checkout COMMIT ID			(READ BRANCHES FIRST)
+		.ex: git checkout 9602b6d64794e58743581b8305ba83969c6da617
+
+WARNING: After b) the cursor of git will be in a branch of the master. 
+
+5. Branches
+   - What is a branch? A branch is an alternative of the main project. For example, if you want to try
+     something new, before adding to the main course, you allocate a copy in a branch and change it directly
+     before adding it to the the main branch, if wanted.
+	a1) git branch CHECK WHERE THE CURSOR OF GIT IS
+		.ex: 
+			$git branch			| * : shows in which branch the git cursor is in.
+			 * (HEAD detached at 5cb48ca)	| 
+			 branch 1			| master, branch 1, (HEAD detached at ...) : existing
+			 master 			| branches in the git tree.
+
+		   - in the moment, the git cursor is in a previous commit of the master.
+
+	a2) TO CREATE A NEW BRANCH git branch BRANCH_NAME.
+	b) TO JUMP TO A BRANCH USE git checkout BRANCH OR git switch BRANCH. 
+		.ex: get checkout master (get branch will show *master)
+					OR 
+		     get checkout branch 1 ( get branch will show *branch 1)
+
+6. Merge
+   - After you found the desired branch with the desired changes, you can made the branch the master.
+	a) git merge -m "COMMENT" BRANCH_TO_MASTER
+
+7. Get Started in Git Hub
+	a) CREATE A NEW REPOSITORY IN GIT HUB ONLINE
+	b1) NEW REPOSITORY:
+		$echo "# FOLDER_NAME" >> README.md
+		$git init
+		$git commit -m "first commit"
+		$git branch -M main
+		$git remote add origin HTTPS_LINK
+		$git push -u origin main
+	b2) ASSOCIATE TO AN EXISTING FOLDER:
+		$git remote add origin HTTPS_LINK
+		$git branch -M main
+		$git push -u origin main
+
+8. Fetch and Pull
+	a1) DOWNLOAD ALL DATA FROM GIT HUB TO GIT, git fetch
+	b1) TO MERGE DATA TO LOCAL GIT, git merge
+			OR
+	a2) git push IT'S A COMMAND THAT DOES a1 AND b1 IN ONE COMMAND
+9. Push
+	a) TO SEND ALL DATA TO GIT HUB git push --ALL
+
+-------------------------------
+ADDITIONAL COMMANDS:
+	a) TO REMOVE FILES FROM REPOSITORY git rm --cached FILE_NAME
+	b) IF YOU WANT GIT TO IGNORE SOME FILES.
+		1) CREATE A FILE IN THE REPOSITORY WITH THE NAME .gitignore
+		2) WRITE THE EXTENSIONS OR FILES YOU WANT TO IGNORE IN THE .gitignore
+	    - CHECK ALL EXTENSIONS POSSIBLE TO IGNORE IN https://github.com/github/gitignore
+	c) CHECK WHERE THE FILES WERE MODIFIED git diff
+		.ex: $git diff
+		     <html>
+		     <body>
+		        -<p> Hello World</p>
+			+<p> Hello Portugal</p>
+		     </body>
+		     </html>
+	d) DELETE A FILE git rm "FILE_NAME"
+	e) BEFORE COMMIT THE FILES, YOU REGRET DELETING A FILE. USE git restore "FILE_NAME"
+	f) BEFORE COMMIT THE FILES, YOU REGRET ADDING IT TO THE GIT. USE git restore --staged FILE_NAME
+	g) DELETE A BRANCH git branch -d BRANCH
+
+			
+GIT TUTORIAL: https://www.youtube.com/watch?v=tRZGeaHPoaw
+		 
+		   
+		   
+		
+
+
+	
