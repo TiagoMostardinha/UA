@@ -1,2 +1,2 @@
 # UA
-This repository has all the subjects distributed in branches by year from the course LECI.
+This repository has all subjects distributed in branches by year from the course LECI.
