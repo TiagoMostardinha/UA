@@ -1,0 +1,52 @@
+|Accu
+dataIn[0] => adder:Add.op0[0]
+dataIn[1] => adder:Add.op0[1]
+dataIn[2] => adder:Add.op0[2]
+dataIn[3] => adder:Add.op0[3]
+rst => reg:Reg.clr
+EN => reg:Reg.WEn
+CK => reg:Reg.clk
+dataOut[0] <= reg:Reg.dout[0]
+dataOut[1] <= reg:Reg.dout[1]
+dataOut[2] <= reg:Reg.dout[2]
+dataOut[3] <= reg:Reg.dout[3]
+
+
+|Accu|Adder:Add
+op0[0] => Add0.IN4
+op0[1] => Add0.IN3
+op0[2] => Add0.IN2
+op0[3] => Add0.IN1
+op1[0] => Add0.IN8
+op1[1] => Add0.IN7
+op1[2] => Add0.IN6
+op1[3] => Add0.IN5
+s[0] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+s[3] <= Add0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Accu|Reg:Reg
+clk => dout[0]~reg0.CLK
+clk => dout[1]~reg0.CLK
+clk => dout[2]~reg0.CLK
+clk => dout[3]~reg0.CLK
+clr => dout.OUTPUTSELECT
+clr => dout.OUTPUTSELECT
+clr => dout.OUTPUTSELECT
+clr => dout.OUTPUTSELECT
+WEn => dout.OUTPUTSELECT
+WEn => dout.OUTPUTSELECT
+WEn => dout.OUTPUTSELECT
+WEn => dout.OUTPUTSELECT
+din[0] => dout.DATAB
+din[1] => dout.DATAB
+din[2] => dout.DATAB
+din[3] => dout.DATAB
+dout[0] <= dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

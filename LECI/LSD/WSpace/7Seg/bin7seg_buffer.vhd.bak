@@ -1,0 +1,25 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity bin7seg_buffer is
+    port(binIn : in  std_logic_vector(2 downto 0);
+         binOut : out std_logic_vector(15 downto 0));
+end bin7seg_buffer;
+
+
+architecture Behavioral of bin7seg_buffer	 is
+begin 
+
+process (binIn) is
+begin
+	if ( binIn = "0000") then binOut <= "1011011110110111";
+	elsif ( binIn = "0001") then binOut <= "1001101010010001";
+	elsif ( binIn = "0010") then binOut <= "0001001000110000";
+	elsif ( binIn = "0011") then binOut <= "0100010101100111";
+	elsif ( binIn = "0100") then binOut <= "0100100010010100";
+	else binOut <= "0000000000000000";
+	
+end if;
+end process;
+end Behavioral;
+	

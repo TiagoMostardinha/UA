@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Wed Jun 09 00:27:48 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Rom_8x4
+Top-level Entity Name : Ram_32x8
+Family : Cyclone IV E
+Total logic elements : 472
+    Total combinational functions : 216
+    Dedicated logic registers : 256
+Total registers : 256
+Total pins : 23
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

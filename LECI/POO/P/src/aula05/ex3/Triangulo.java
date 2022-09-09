@@ -1,0 +1,65 @@
+package aula05.ex3;
+
+public class Triangulo {
+    private double lado1;
+    private double lado2;
+    private double lado3;
+
+    Triangulo(double l1,double l2,double l3){
+        setL1(testFGeo.valid(l1));
+        setL2(testFGeo.valid(l2));
+        setL3(testFGeo.valid(l3));
+    }
+
+    //get...
+    public double getL1() {
+        return this.lado1;
+    }
+    public double getL2() {
+        return this.lado2;
+    }
+    public double getL3() {
+        return this.lado3;
+    }
+
+    //set...
+    public void setL1(double l){
+        assert l > 0;
+        lado1 = testFGeo.valid(l);
+    }
+    public void setL2(double l){
+        assert l > 0;
+        lado2 = testFGeo.valid(l);
+    }
+    public void setL3(double l){
+        assert l > 0;
+        lado3 = testFGeo.valid(l);
+    }
+
+    //equals
+    public boolean equals(Triangulo tri){
+        return this.lado1 == tri.lado1 && this.lado2 == tri.lado2 && this.lado3 == tri.lado3;
+    }
+
+    //validTri
+    public void validTri(){
+        double aux = Math.sqrt(Math.pow(this.lado1, 2) + Math.pow(this.lado2, 2));
+        this.lado3 = (this.lado3 == aux) ? this.lado3 : aux;
+    }
+    //area
+    public double area(){
+        double p = this.perimeter() / 2;
+        return Math.sqrt(p*(p - this.lado1) + p*(p - this.lado2) + p*(p - this.lado3));
+    }
+
+    //perimeter
+    public double perimeter(){
+        return this.lado1 + this.lado2 + this.lado3;
+    }
+
+    //toString
+    public String toString(){
+        return String.format("%.2f %.2f %.2f", this.lado1,this.lado2,this.lado3);
+    }
+
+}

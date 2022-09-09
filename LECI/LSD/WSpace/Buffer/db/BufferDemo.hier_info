@@ -1,0 +1,18 @@
+|BufferMem
+Clock => Sel_GelOut~reg0.CLK
+Clock => SumoPeOut~reg0.CLK
+Clock => SumoLiOut~reg0.CLK
+Clock => FantaOut~reg0.CLK
+Clock => ResetOut~reg0.CLK
+ResetIn => ResetOut~reg0.DATAIN
+FantaIn => FantaOut~reg0.DATAIN
+SumoLiIn => SumoLiOut~reg0.DATAIN
+SumoPeIn => SumoPeOut~reg0.DATAIN
+Sel_GelIn => Sel_GelOut~reg0.DATAIN
+ResetOut <= ResetOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+FantaOut <= FantaOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SumoLiOut <= SumoLiOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+SumoPeOut <= SumoPeOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Sel_GelOut <= Sel_GelOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

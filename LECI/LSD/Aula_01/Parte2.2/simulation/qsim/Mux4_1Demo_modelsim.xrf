@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tiago/DiscoD/UA/LSD/Aula_01/Parte2.2/Mux4_1.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/tiago/DiscoD/UA/LSD/Aula_01/Parte2.2/db/Mux4_1Demo.cbx.xml
+design_name = Mux4_1
+instance = comp, \muxOut~output\, muxOut~output, Mux4_1, 1
+instance = comp, \inputs[2]~input\, inputs[2]~input, Mux4_1, 1
+instance = comp, \sel[1]~input\, sel[1]~input, Mux4_1, 1
+instance = comp, \inputs[1]~input\, inputs[1]~input, Mux4_1, 1
+instance = comp, \sel[0]~input\, sel[0]~input, Mux4_1, 1
+instance = comp, \inputs[0]~input\, inputs[0]~input, Mux4_1, 1
+instance = comp, \Mux0~0\, Mux0~0, Mux4_1, 1
+instance = comp, \inputs[3]~input\, inputs[3]~input, Mux4_1, 1
+instance = comp, \Mux0~1\, Mux0~1, Mux4_1, 1

@@ -1,0 +1,168 @@
+// Copyright (C) 2017  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "12/03/2021 10:54:37"
+                                                                                
+// Verilog Test Bench (with test vectors) for design :                          AddSub4
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module AddSub4_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg Add_Sub;
+reg in00;
+reg in01;
+reg in02;
+reg in03;
+reg in10;
+reg in11;
+reg in12;
+reg in13;
+// wires                                               
+wire overflow;
+wire sum0;
+wire sum1;
+wire sum2;
+wire sum3;
+
+// assign statements (if any)                          
+AddSub4 i1 (
+// port map - connection between master ports and signals/registers   
+	.Add_Sub(Add_Sub),
+	.in00(in00),
+	.in01(in01),
+	.in02(in02),
+	.in03(in03),
+	.in10(in10),
+	.in11(in11),
+	.in12(in12),
+	.in13(in13),
+	.overflow(overflow),
+	.sum0(sum0),
+	.sum1(sum1),
+	.sum2(sum2),
+	.sum3(sum3)
+);
+initial 
+begin 
+#1000000 $finish;
+end 
+
+// in13
+initial
+begin
+	in13 = 1'b1;
+	in13 = #100000 1'b0;
+	in13 = #500000 1'b1;
+	in13 = #100000 1'b0;
+end 
+
+// in12
+initial
+begin
+	in12 = 1'b1;
+	in12 = #200000 1'b0;
+	in12 = #100000 1'b1;
+	in12 = #100000 1'b0;
+	in12 = #100000 1'b1;
+	in12 = #100000 1'b0;
+	in12 = #100000 1'b1;
+end 
+
+// in11
+initial
+begin
+	in11 = 1'b1;
+	in11 = #100000 1'b0;
+	in11 = #100000 1'b1;
+	in11 = #100000 1'b0;
+	in11 = #100000 1'b1;
+	in11 = #100000 1'b0;
+	in11 = #200000 1'b1;
+end 
+
+// in10
+initial
+begin
+	in10 = 1'b0;
+	in10 = #100000 1'b1;
+	in10 = #100000 1'b0;
+	in10 = #100000 1'b1;
+	in10 = #100000 1'b0;
+	in10 = #100000 1'b1;
+	in10 = #100000 1'b0;
+	in10 = #100000 1'b1;
+	in10 = #200000 1'b0;
+end 
+
+// in03
+initial
+begin
+	in03 = 1'b1;
+	in03 = #100000 1'b0;
+	in03 = #100000 1'b1;
+	in03 = #100000 1'b0;
+	in03 = #200000 1'b1;
+	in03 = #200000 1'b0;
+end 
+
+// in02
+initial
+begin
+	in02 = 1'b0;
+	in02 = #200000 1'b1;
+	in02 = #100000 1'b0;
+	in02 = #300000 1'b1;
+end 
+
+// in01
+initial
+begin
+	in01 = 1'b0;
+	in01 = #100000 1'b1;
+	in01 = #100000 1'b0;
+	in01 = #100000 1'b1;
+	in01 = #100000 1'b0;
+	in01 = #100000 1'b1;
+	in01 = #200000 1'b0;
+	in01 = #200000 1'b1;
+end 
+
+// in00
+initial
+begin
+	in00 = 1'b1;
+	in00 = #300000 1'b0;
+	in00 = #200000 1'b1;
+	in00 = #100000 1'b0;
+	in00 = #300000 1'b1;
+end 
+
+// Add_Sub
+initial
+begin
+	Add_Sub = 1'b0;
+	Add_Sub = #520000 1'b1;
+end 
+endmodule
+

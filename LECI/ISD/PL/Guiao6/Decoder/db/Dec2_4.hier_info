@@ -1,0 +1,123 @@
+|Ex2_Part2
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+in[0] => Dec4_16:inst.in[0]
+in[1] => Dec4_16:inst.in[1]
+in[2] => Dec4_16:inst.in[2]
+in[3] => Dec4_16:inst.in[3]
+
+
+|Ex2_Part2|Dec4_16:inst
+out[0] <= Dec2_4:inst2.out0
+out[1] <= Dec2_4:inst2.out1
+out[2] <= Dec2_4:inst2.out2
+out[3] <= Dec2_4:inst2.out3
+out[4] <= Dec2_4:inst3.out0
+out[5] <= Dec2_4:inst3.out1
+out[6] <= Dec2_4:inst3.out2
+out[7] <= Dec2_4:inst3.out3
+out[8] <= Dec2_4:inst4.out0
+out[9] <= Dec2_4:inst4.out1
+out[10] <= Dec2_4:inst4.out2
+out[11] <= Dec2_4:inst4.out3
+out[12] <= Dec2_4:inst5.out0
+out[13] <= Dec2_4:inst5.out1
+out[14] <= Dec2_4:inst5.out2
+out[15] <= Dec2_4:inst5.out3
+in[0] => Dec2_4:inst2.X0
+in[0] => Dec2_4:inst3.X0
+in[0] => Dec2_4:inst4.X0
+in[0] => Dec2_4:inst5.X0
+in[1] => Dec2_4:inst2.X1
+in[1] => Dec2_4:inst3.X1
+in[1] => Dec2_4:inst4.X1
+in[1] => Dec2_4:inst5.X1
+in[2] => Dec2_4:inst.X0
+in[3] => Dec2_4:inst.X1
+En => Dec2_4:inst.En
+
+
+|Ex2_Part2|Dec4_16:inst|Dec2_4:inst2
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+X1 => inst6.IN0
+X1 => inst2.IN0
+X1 => inst4.IN0
+X0 => inst5.IN0
+X0 => inst1.IN1
+X0 => inst4.IN1
+En => inst.IN2
+En => inst1.IN2
+En => inst2.IN2
+En => inst4.IN2
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ex2_Part2|Dec4_16:inst|Dec2_4:inst
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+X1 => inst6.IN0
+X1 => inst2.IN0
+X1 => inst4.IN0
+X0 => inst5.IN0
+X0 => inst1.IN1
+X0 => inst4.IN1
+En => inst.IN2
+En => inst1.IN2
+En => inst2.IN2
+En => inst4.IN2
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ex2_Part2|Dec4_16:inst|Dec2_4:inst3
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+X1 => inst6.IN0
+X1 => inst2.IN0
+X1 => inst4.IN0
+X0 => inst5.IN0
+X0 => inst1.IN1
+X0 => inst4.IN1
+En => inst.IN2
+En => inst1.IN2
+En => inst2.IN2
+En => inst4.IN2
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ex2_Part2|Dec4_16:inst|Dec2_4:inst4
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+X1 => inst6.IN0
+X1 => inst2.IN0
+X1 => inst4.IN0
+X0 => inst5.IN0
+X0 => inst1.IN1
+X0 => inst4.IN1
+En => inst.IN2
+En => inst1.IN2
+En => inst2.IN2
+En => inst4.IN2
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Ex2_Part2|Dec4_16:inst|Dec2_4:inst5
+out0 <= inst.DB_MAX_OUTPUT_PORT_TYPE
+X1 => inst6.IN0
+X1 => inst2.IN0
+X1 => inst4.IN0
+X0 => inst5.IN0
+X0 => inst1.IN1
+X0 => inst4.IN1
+En => inst.IN2
+En => inst1.IN2
+En => inst2.IN2
+En => inst4.IN2
+out1 <= inst1.DB_MAX_OUTPUT_PORT_TYPE
+out2 <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+out3 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+
+

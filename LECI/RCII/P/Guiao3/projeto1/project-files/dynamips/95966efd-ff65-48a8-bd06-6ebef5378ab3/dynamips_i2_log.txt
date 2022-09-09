@@ -1,0 +1,31 @@
+Apr 08 14:20:14.233 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Apr 08 14:20:14.233 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60075.
+Apr 08 14:20:14.696 HYPERVISOR: exec_cmd: hypervisor version 
+Apr 08 14:20:14.696 HYPERVISOR: exec_cmd: hypervisor working_dir D:\UA\RCII\P\Guiao3\projeto1\project-files\dynamips 
+Apr 08 14:20:14.700 GENERAL: working_dir=D:\UA\RCII\P\Guiao3\projeto1\project-files\dynamips
+Apr 08 14:20:14.700 HYPERVISOR: exec_cmd: ethsw create netC 
+Apr 08 14:20:19.573 HYPERVISOR: exec_cmd: nio create_udp udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 10007 127.0.0.1 10006 
+Apr 08 14:20:19.573 HYPERVISOR: exec_cmd: ethsw add_nio netC udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 
+Apr 08 14:20:19.606 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 1 
+Apr 08 14:20:20.828 HYPERVISOR: exec_cmd: nio create_udp udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 10031 127.0.0.1 10030 
+Apr 08 14:20:20.844 HYPERVISOR: exec_cmd: ethsw add_nio netC udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 
+Apr 08 14:20:20.860 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 1 
+Apr 08 14:32:24.598 HYPERVISOR: exec_cmd: nio bind_filter udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 2 capture 
+Apr 08 14:32:24.598 HYPERVISOR: exec_cmd: nio setup_filter udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\R1_FastEthernet00_to_netC_Ethernet0.pcap 
+Apr 08 14:54:43.936 HYPERVISOR: exec_cmd: nio unbind_filter udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 2 
+Apr 08 14:55:04.831 HYPERVISOR: exec_cmd: nio bind_filter udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 2 capture 
+Apr 08 14:55:04.832 HYPERVISOR: exec_cmd: nio setup_filter udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\R3_FastEthernet00_to_netC_Ethernet1.pcap 
+Apr 08 15:01:33.944 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 1 
+Apr 08 15:01:33.949 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 1 
+Apr 08 15:01:48.072 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 1 
+Apr 08 15:01:48.084 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 1 
+Apr 08 15:01:49.383 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 1 
+Apr 08 15:01:49.482 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 1 
+Apr 08 15:01:51.971 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 1 
+Apr 08 15:01:52.070 HYPERVISOR: exec_cmd: ethsw set_access_port netC udp-c0ceb152-e490-4f90-a3e5-09552c1ef6ef 1 
+Apr 08 15:18:04.940 HYPERVISOR: exec_cmd: nio bind_filter udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 2 capture 
+Apr 08 15:18:04.941 HYPERVISOR: exec_cmd: nio setup_filter udp-c65764e2-779a-43fa-b03f-2b76f4d4c555 2 en10mb D:\UA\RCII\P\Guiao3\projeto1\project-files\captures\R1_FastEthernet00_to_netC_Ethernet0.pcap 
+Apr 08 15:55:41.847 HYPERVISOR: exec_cmd: ethsw delete netC 
+Apr 08 15:55:41.895 HYPERVISOR: exec_cmd: hypervisor stop 
+Apr 08 15:55:42.154 HYPERVISOR: Stopped.
+Apr 08 15:55:42.189 GENERAL: reset done.

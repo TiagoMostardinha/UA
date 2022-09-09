@@ -1,0 +1,18 @@
+1. Qual o endereço de broadcast das redes:
+- 200.3.27.128/25					R: 200.3.27.255
+- 200.3.27.0 e 200.3.27.128 máscara 255.255.248.0?	R: 200.3.31.255
+2. Qual a primeira máquina das redes que têm uma máquina com o endereço:
+- 175.0.92.191/23					R: 175.0.92.1
+- 175.0.92.190/26					R: 175.0.92.129
+- 175.0.92.18/28?					R: 175.0.92.17
+3. Qual a última máquina das redes:
+- 175.0.32.0 máscara 255.255.248.0			R: 175.0.39.255
+- 175.0.0.0 máscara 255.255.224.0			R: 175.0.15.255
+- 175.0.16.0 máscara 255.255.248.0			R: 
+4. Quais as redes da máquina:
+- 175.0.22.79/25
+- 175.0.117.215/23
+- 175.0.117.215/27?
+5. Quantas redes e com quantas máquinas se obtêm nas redes particionadas como:
+- 175.0.4.0 máscara 255.255.255.252
+- 175.0.114.0 255.255.255.240?
