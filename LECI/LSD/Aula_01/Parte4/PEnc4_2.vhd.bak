@@ -1,5 +1,0 @@
-entity PEnc4_2 is 
-    port(enable  : in  std_logic; 
-         inputs  : in  std_logic_vector(3 downto 0); 
-         outputs : out std_logic_vector(1 downto 0)); 
-end PEnc4_2;
