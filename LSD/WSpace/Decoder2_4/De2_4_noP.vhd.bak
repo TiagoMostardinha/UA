@@ -1,14 +1,0 @@
-library IEEE;
-use IEEE.STD_LOGIC_1164.all;
-
-entity De2_4_noP is
-	port(enable : in  std_logic;
-		in0 : in std_logic_vector(1 downto 0);
-		out0 : out std_logic_vector(3 downto 0));
-end De2_4_noP;
-architecture Behavorial of De2_4_noP is
-begin
-
-	out0(3) <= '1' when (in0 = "11" and enable = '1');
-	
-end Behavorial;
