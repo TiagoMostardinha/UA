@@ -1,0 +1,18 @@
+|Cmp2_noP
+in0[0] => Equal0.IN1
+in0[0] => LessThan0.IN2
+in0[0] => LessThan1.IN2
+in0[1] => Equal0.IN0
+in0[1] => LessThan0.IN1
+in0[1] => LessThan1.IN1
+in1[0] => Equal0.IN3
+in1[0] => LessThan0.IN4
+in1[0] => LessThan1.IN4
+in1[1] => Equal0.IN2
+in1[1] => LessThan0.IN3
+in1[1] => LessThan1.IN3
+outl << outl.DB_MAX_OUTPUT_PORT_TYPE
+oute << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+outg << outg.DB_MAX_OUTPUT_PORT_TYPE
+
+

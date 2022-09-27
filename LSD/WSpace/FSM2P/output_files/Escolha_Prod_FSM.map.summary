@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Fri Jun 18 17:48:18 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : Escolha_Prod_FSM
+Top-level Entity Name : Block3
+Family : Cyclone IV E
+Total logic elements : 20
+    Total combinational functions : 19
+    Dedicated logic registers : 7
+Total registers : 7
+Total pins : 22
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

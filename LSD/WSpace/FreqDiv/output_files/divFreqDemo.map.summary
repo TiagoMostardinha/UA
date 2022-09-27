@@ -1,0 +1,14 @@
+Analysis & Synthesis Status : Successful - Tue May 25 23:35:42 2021
+Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Revision Name : divFreqDemo
+Top-level Entity Name : FreqDiv
+Family : Cyclone IV E
+Total logic elements : 44
+    Total combinational functions : 44
+    Dedicated logic registers : 32
+Total registers : 32
+Total pins : 3
+Total virtual pins : 0
+Total memory bits : 0
+Embedded Multiplier 9-bit elements : 0
+Total PLLs : 0

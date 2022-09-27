@@ -1,0 +1,10 @@
+|EDUTIMER
+reset => ~NO_FANOUT~
+clk => ~NO_FANOUT~
+timerEnable => ~NO_FANOUT~
+newTime => ~NO_FANOUT~
+timeVal[0] => ~NO_FANOUT~
+timeVal[1] => ~NO_FANOUT~
+timeExp <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+
