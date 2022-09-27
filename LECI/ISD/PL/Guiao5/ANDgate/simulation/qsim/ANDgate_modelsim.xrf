@@ -1,0 +1,7 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tiago/DiscoD/UA/ISD/PL/Guiao5/ANDgate/ANDgate.bdf
+source_file = 1, C:/Users/tiago/DiscoD/UA/ISD/PL/Guiao5/ANDgate/db/ANDgate.cbx.xml
+design_name = ANDgate
+instance = comp, \out0~output , out0~output, ANDgate, 1
+instance = comp, \in0~input , in0~input, ANDgate, 1
+instance = comp, \in1~input , in1~input, ANDgate, 1

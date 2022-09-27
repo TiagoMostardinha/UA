@@ -1,0 +1,152 @@
+$comment
+	File created using the following command:
+		vcd file AND2Demo.msim.vcd -direction
+$end
+$date
+	Wed Apr 21 16:35:50 2021
+$end
+$version
+	ModelSim Version 10.5b
+$end
+$timescale
+	1ps
+$end
+
+$scope module notgate_vhd_vec_tst $end
+$var wire 1 ! i $end
+$var wire 1 " o $end
+
+$scope module i1 $end
+$var wire 1 # gnd $end
+$var wire 1 $ vcc $end
+$var wire 1 % unknown $end
+$var wire 1 & devoe $end
+$var wire 1 ' devclrn $end
+$var wire 1 ( devpor $end
+$var wire 1 ) ww_devoe $end
+$var wire 1 * ww_devclrn $end
+$var wire 1 + ww_devpor $end
+$var wire 1 , ww_i $end
+$var wire 1 - ww_o $end
+$var wire 1 . \o~output_o\ $end
+$var wire 1 / \i~input_o\ $end
+$var wire 1 0 \ALT_INV_i~input_o\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+0#
+1$
+x%
+1&
+1'
+1(
+1)
+1*
+1+
+1,
+0-
+0.
+1/
+00
+$end
+#100000
+0!
+0,
+0/
+10
+1.
+1-
+1"
+#150000
+1!
+1,
+1/
+00
+0.
+0-
+0"
+#200000
+0!
+0,
+0/
+10
+1.
+1-
+1"
+#250000
+1!
+1,
+1/
+00
+0.
+0-
+0"
+#350000
+0!
+0,
+0/
+10
+1.
+1-
+1"
+#400000
+1!
+1,
+1/
+00
+0.
+0-
+0"
+#500000
+0!
+0,
+0/
+10
+1.
+1-
+1"
+#550000
+1!
+1,
+1/
+00
+0.
+0-
+0"
+#600000
+0!
+0,
+0/
+10
+1.
+1-
+1"
+#750000
+1!
+1,
+1/
+00
+0.
+0-
+0"
+#800000
+0!
+0,
+0/
+10
+1.
+1-
+1"
+#900000
+1!
+1,
+1/
+00
+0.
+0-
+0"
+#1000000

@@ -1,0 +1,14 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.all;
+
+entity LogicUnit is 
+	port(inPort0 : in std_logic;
+		inPort1 : in std_logic;
+		invOut : out std_logic;
+		andOut : out std_logic;
+		orOut : out std_logic;
+		xorOut : out std_logic;
+		nandOut : out std_logic;
+		norOut : out std_logic);
+		
+end LogicUnit;

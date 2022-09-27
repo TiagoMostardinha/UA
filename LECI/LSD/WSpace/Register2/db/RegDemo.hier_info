@@ -1,0 +1,32 @@
+|Reg_Test
+CLOCK_50 => reg_5x5:reg.clk
+SW[0] => reg_5x5:reg.din[0]
+SW[1] => reg_5x5:reg.din[1]
+SW[2] => reg_5x5:reg.din[2]
+SW[3] => reg_5x5:reg.din[3]
+SW[4] => reg_5x5:reg.din[4]
+LEDG[0] << reg_5x5:reg.dout[0]
+LEDG[1] << reg_5x5:reg.dout[1]
+LEDG[2] << reg_5x5:reg.dout[2]
+LEDG[3] << reg_5x5:reg.dout[3]
+LEDG[4] << reg_5x5:reg.dout[4]
+
+
+|Reg_Test|Reg_5x5:reg
+clk => dout[0]~reg0.CLK
+clk => dout[1]~reg0.CLK
+clk => dout[2]~reg0.CLK
+clk => dout[3]~reg0.CLK
+clk => dout[4]~reg0.CLK
+din[0] => dout[0]~reg0.DATAIN
+din[1] => dout[1]~reg0.DATAIN
+din[2] => dout[2]~reg0.DATAIN
+din[3] => dout[3]~reg0.DATAIN
+din[4] => dout[4]~reg0.DATAIN
+dout[0] <= dout[0]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[1] <= dout[1]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[3] <= dout[3]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+dout[4] <= dout[4]~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

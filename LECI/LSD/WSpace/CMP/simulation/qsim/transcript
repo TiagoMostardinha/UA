@@ -1,0 +1,44 @@
+# do CmpDemo.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:13:49 on Apr 25,2021
+# vcom -work work CmpDemo.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity Cmp2_noP
+# -- Compiling architecture structure of Cmp2_noP
+# End time: 10:13:49 on Apr 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 10:13:49 on Apr 25,2021
+# vcom -work work Cmp_wP.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Cmp2_noP_vhd_vec_tst
+# -- Compiling architecture Cmp2_noP_arch of Cmp2_noP_vhd_vec_tst
+# End time: 10:13:49 on Apr 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.Cmp2_noP_vhd_vec_tst 
+# Start time: 10:13:49 on Apr 25,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.cmp2_nop_vhd_vec_tst(cmp2_nop_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.cmp2_nop(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+# after#31
+# End time: 10:13:49 on Apr 25,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

@@ -1,0 +1,75 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/PL/Teste/Decoder3_8_Teste/simulation/qsim
+vDecoder3_8
+Z1 !s110 1639696708
+!i10b 1
+!s100 iU77FGk@6C5GMQO]H7V?l1
+IgY]9;2;15GCj0o5JFD]LZ2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1639696707
+Z4 8Decoder3_8.vo
+Z5 FDecoder3_8.vo
+L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1639696708.000000
+Z8 !s107 Decoder3_8.vo|
+Z9 !s90 -work|work|Decoder3_8.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@decoder3_8
+vDecoder3_8_vlg_vec_tst
+R1
+!i10b 1
+!s100 JmCDVY568okY>Y@XA]Ez>0
+IdV^8NQZj3e_cNEb3`m52A0
+R2
+R0
+w1639696706
+8Decoder3_8_Test.vwf.vt
+FDecoder3_8_Test.vwf.vt
+L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Decoder3_8_Test.vwf.vt|
+!s90 -work|work|Decoder3_8_Test.vwf.vt|
+!i113 1
+R10
+R11
+n@decoder3_8_vlg_vec_tst
+vhard_block
+R1
+!i10b 1
+!s100 Z`aSf1Y:_g@k6beAS8o700
+I>afgi@?P67FIR8N?f5I2I0
+R2
+R0
+R3
+R4
+R5
+L0 754
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
