@@ -15,7 +15,7 @@ resultados= sum(lancamentos);
 sucessos= resultados==2;
 % Determinar o resultado final dividindo o n ́umero de experiˆencias com 2
 % caras pelo n ́umero total de experiˆencias:
-probSimulacao= sum(sucessos)/10000;
+probSimulacao= sum(sucessos)/10000
 
 %% Codigo 1 -v2
 N= 1e5;     % n ́umero de experiˆencias
@@ -25,4 +25,4 @@ n = 3;      %n ́umero de lanc ̧amentos
 
 lancamentos = rand(n,N) > p;
 sucessos= sum(lancamentos)==k;
-probSimulacao= sum(sucessos)/N;
+probSimulacao= sum(sucessos)/N
