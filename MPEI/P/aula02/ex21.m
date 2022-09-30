@@ -35,3 +35,12 @@ B = rapaz_1ouM;
 AB = A & B;
 
 PAB = sum(AB) / sum(B)
+
+%% Codigo 1d
+
+N = 1e5;        % numero de lancamentos
+p = 0.5;        % probabilidade ser rapaz
+k = 1;          % rapaz
+n = 2;          % em 2 filhos
+
+n_filhos = sum(rand(n,N) < 0.5);    
