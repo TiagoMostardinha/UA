@@ -1,0 +1,207 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/PL/Guiao7/Mux2_1/simulation/qsim
+vhard_block
+Z1 !s110 1637922001
+!i10b 1
+!s100 :X1VCk`LW5I?R=:6dJSb;2
+IUn@VO`;6bM_@4_?^3iMPc0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1637922000
+Z4 8Mux2_1.vo
+Z5 FMux2_1.vo
+L0 499
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1637922001.000000
+Z8 !s107 Mux2_1.vo|
+Z9 !s90 -work|work|Mux2_1.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vMux16_1
+Z12 !s110 1637921722
+!i10b 1
+!s100 X<c3`aCY__[^SP_kQQX?30
+IIc5bJZTf4Ba9SS@b]4R6B2
+R2
+R0
+w1637921721
+R4
+R5
+Z13 L0 31
+R6
+r1
+!s85 0
+31
+Z14 !s108 1637921722.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@mux16_1
+vMux16_1_vlg_vec_tst
+R12
+!i10b 1
+!s100 X15A8;2LoLLVZUWBl22Ne1
+Igb@ln;GfF6gHlAnF@kJ>01
+R2
+R0
+w1637921720
+8Mux16_1.vwf.vt
+FMux16_1.vwf.vt
+Z15 L0 29
+R6
+r1
+!s85 0
+31
+R14
+!s107 Mux16_1.vwf.vt|
+!s90 -work|work|Mux16_1.vwf.vt|
+!i113 1
+R10
+R11
+n@mux16_1_vlg_vec_tst
+vMux2_1
+Z16 !s110 1637919349
+!i10b 1
+!s100 V@zHN_Y6?4C9Ve9;G;4??0
+I^1M5hmbESFmAlM;R743eN1
+R2
+R0
+w1637919348
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+Z17 !s108 1637919349.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@mux2_1
+vMux2_1_vlg_vec_tst
+R16
+!i10b 1
+!s100 NQ22AG=m]OgY5f>JWUb3m0
+Ih7TfHLzRW_13YGhNJZFzk2
+R2
+R0
+w1637919346
+8Mux2_1.vwf.vt
+FMux2_1.vwf.vt
+R15
+R6
+r1
+!s85 0
+31
+R17
+!s107 Mux2_1.vwf.vt|
+!s90 -work|work|Mux2_1.vwf.vt|
+!i113 1
+R10
+R11
+n@mux2_1_vlg_vec_tst
+vMuxDemo
+Z18 !s110 1637919620
+!i10b 1
+!s100 0:7PYUM[zI1A2WmiPlj^62
+ITD=72^7YhG]B8SLQakA=21
+R2
+R0
+w1637919619
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+Z19 !s108 1637919620.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@mux@demo
+vMuxDemo2
+R1
+!i10b 1
+!s100 SLO:eNk=zAR3oaJfBg?jD2
+I=gB2kJYMNJ5D<gll?;RbT2
+R2
+R0
+R3
+R4
+R5
+R13
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11
+n@mux@demo2
+vMuxDemo2_vlg_vec_tst
+R1
+!i10b 1
+!s100 FO=hQP5b4Al]@VcQYKidX1
+IU]l]jCWVZi`zY76I[<okP3
+R2
+R0
+w1637921998
+8MuxDemo2.vwf.vt
+FMuxDemo2.vwf.vt
+R15
+R6
+r1
+!s85 0
+31
+R7
+!s107 MuxDemo2.vwf.vt|
+!s90 -work|work|MuxDemo2.vwf.vt|
+!i113 1
+R10
+R11
+n@mux@demo2_vlg_vec_tst
+vMuxDemo_vlg_vec_tst
+R18
+!i10b 1
+!s100 @HDkNzQZf6foXi@aJ?E:n2
+I8zC<l9eQg]:lZWE]ifX2M0
+R2
+R0
+w1637919618
+8MuxDemo.vwf.vt
+FMuxDemo.vwf.vt
+R15
+R6
+r1
+!s85 0
+31
+R19
+!s107 MuxDemo.vwf.vt|
+!s90 -work|work|MuxDemo.vwf.vt|
+!i113 1
+R10
+R11
+n@mux@demo_vlg_vec_tst

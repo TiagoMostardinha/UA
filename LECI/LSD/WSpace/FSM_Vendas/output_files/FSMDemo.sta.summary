@@ -1,0 +1,113 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'FSM_Main:inst|PS.e5'
+Slack : -2.967
+TNS   : -14.233
+
+Type  : Slow 1200mV 85C Model Setup 'SW17'
+Slack : -2.610
+TNS   : -10.462
+
+Type  : Slow 1200mV 85C Model Setup 'CLOCK_50'
+Slack : -2.224
+TNS   : -10.247
+
+Type  : Slow 1200mV 85C Model Hold 'FSM_Main:inst|PS.e5'
+Slack : 0.532
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'CLOCK_50'
+Slack : 0.732
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'SW17'
+Slack : 0.789
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -11.995
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'SW17'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'FSM_Main:inst|PS.e5'
+Slack : 0.400
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'FSM_Main:inst|PS.e5'
+Slack : -2.637
+TNS   : -12.993
+
+Type  : Slow 1200mV 0C Model Setup 'SW17'
+Slack : -2.556
+TNS   : -10.181
+
+Type  : Slow 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.904
+TNS   : -8.710
+
+Type  : Slow 1200mV 0C Model Hold 'FSM_Main:inst|PS.e5'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.625
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'SW17'
+Slack : 0.770
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -11.995
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'SW17'
+Slack : -3.000
+TNS   : -3.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'FSM_Main:inst|PS.e5'
+Slack : 0.407
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'FSM_Main:inst|PS.e5'
+Slack : -1.550
+TNS   : -2.959
+
+Type  : Fast 1200mV 0C Model Setup 'CLOCK_50'
+Slack : -1.246
+TNS   : -5.852
+
+Type  : Fast 1200mV 0C Model Setup 'SW17'
+Slack : -0.529
+TNS   : -1.456
+
+Type  : Fast 1200mV 0C Model Hold 'SW17'
+Slack : 0.155
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'FSM_Main:inst|PS.e5'
+Slack : 0.172
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'CLOCK_50'
+Slack : 0.370
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLOCK_50'
+Slack : -3.000
+TNS   : -10.300
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'SW17'
+Slack : -3.000
+TNS   : -3.019
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'FSM_Main:inst|PS.e5'
+Slack : 0.429
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,29 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "timerOut",
+					"strict" : false
+				},
+				{
+					"name" : "latch",
+					"strict" : false
+				},
+				{
+					"name" : "start",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "halt",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

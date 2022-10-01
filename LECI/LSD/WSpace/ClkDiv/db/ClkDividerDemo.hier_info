@@ -1,0 +1,10 @@
+|ClkDividerN
+clkIn => s_divCounter[0].CLK
+clkIn => s_divCounter[1].CLK
+clkIn => clkOut~reg0.CLK
+clkEn => clkOut.OUTPUTSELECT
+clkEn => s_divCounter[0].ENA
+clkEn => s_divCounter[1].ENA
+clkOut <= clkOut~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

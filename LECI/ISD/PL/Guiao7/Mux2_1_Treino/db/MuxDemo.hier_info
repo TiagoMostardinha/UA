@@ -1,0 +1,75 @@
+|Mux8_1
+y <= MuxDemo:j.y
+s[0] => MuxDemo:d.S
+s[0] => MuxDemo:f.S
+s[0] => MuxDemo:a.S
+s[0] => MuxDemo:n.S
+s[1] => MuxDemo:h.S
+s[1] => MuxDemo:g.S
+s[2] => MuxDemo:j.S
+x[7] => MuxDemo:f.x[0]
+x[6] => MuxDemo:f.x[1]
+x[5] => MuxDemo:d.x[0]
+x[4] => MuxDemo:d.x[1]
+x[3] => MuxDemo:n.x[0]
+x[2] => MuxDemo:n.x[1]
+x[1] => MuxDemo:a.x[0]
+x[0] => MuxDemo:a.x[1]
+
+
+|Mux8_1|MuxDemo:j
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+
+|Mux8_1|MuxDemo:h
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+
+|Mux8_1|MuxDemo:d
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+
+|Mux8_1|MuxDemo:f
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+
+|Mux8_1|MuxDemo:g
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+
+|Mux8_1|MuxDemo:a
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+
+|Mux8_1|MuxDemo:n
+y <= inst2.DB_MAX_OUTPUT_PORT_TYPE
+S => inst1.IN0
+S => inst3.IN0
+x[0] => inst.IN1
+x[1] => inst1.IN1
+
+

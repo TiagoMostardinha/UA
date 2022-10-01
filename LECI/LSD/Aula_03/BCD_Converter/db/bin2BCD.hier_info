@@ -1,0 +1,22 @@
+|bin2BCD
+a[0] => LessThan0.IN8
+a[0] => r[0].DATAIN
+a[1] => LessThan0.IN7
+a[1] => Add0.IN6
+a[1] => r.DATAB
+a[2] => LessThan0.IN6
+a[2] => Add0.IN5
+a[2] => r.DATAB
+a[3] => LessThan0.IN5
+a[3] => Add0.IN4
+a[3] => r.DATAB
+r[0] << a[0].DB_MAX_OUTPUT_PORT_TYPE
+r[1] << r.DB_MAX_OUTPUT_PORT_TYPE
+r[2] << r.DB_MAX_OUTPUT_PORT_TYPE
+r[3] << r.DB_MAX_OUTPUT_PORT_TYPE
+r[4] << r.DB_MAX_OUTPUT_PORT_TYPE
+r[5] << <GND>
+r[6] << <GND>
+r[7] << <GND>
+
+

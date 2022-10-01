@@ -1,0 +1,12 @@
+|EqCmp4
+inPort0[0] => Equal0.IN3
+inPort0[1] => Equal0.IN2
+inPort0[2] => Equal0.IN1
+inPort0[3] => Equal0.IN0
+inPort1[0] => Equal0.IN7
+inPort1[1] => Equal0.IN6
+inPort1[2] => Equal0.IN5
+inPort1[3] => Equal0.IN4
+cmpOut << Equal0.DB_MAX_OUTPUT_PORT_TYPE
+
+

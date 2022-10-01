@@ -1,0 +1,17 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tiago/DiscoD/UA/LSD/WSpace/SeqDetector/SeqDet101me.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/tiago/DiscoD/UA/LSD/WSpace/SeqDetector/db/SeqDetDemo.cbx.xml
+design_name = SeqDet101me
+instance = comp, \dout~output\, dout~output, SeqDet101me, 1
+instance = comp, \din~input\, din~input, SeqDet101me, 1
+instance = comp, \clk~input\, clk~input, SeqDet101me, 1
+instance = comp, \rst~input\, rst~input, SeqDet101me, 1
+instance = comp, \PS~6\, PS~6, SeqDet101me, 1
+instance = comp, \PS.s1\, PS.s1, SeqDet101me, 1
+instance = comp, \PS~5\, PS~5, SeqDet101me, 1
+instance = comp, \PS.s2\, PS.s2, SeqDet101me, 1
+instance = comp, \dout~1\, dout~1, SeqDet101me, 1

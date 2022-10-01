@@ -1,0 +1,12 @@
+|SeqDet101me
+clk => PS~1.DATAIN
+din => dout.DATAB
+din => NS.s1.IN0
+din => Selector0.IN1
+din => NS.s2.DATAB
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+dout <= dout.DB_MAX_OUTPUT_PORT_TYPE
+
+

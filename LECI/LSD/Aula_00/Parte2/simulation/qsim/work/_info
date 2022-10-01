@@ -1,0 +1,182 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/UA/LSD/Aula_00/Parte2/simulation/qsim
+Eand2gate
+Z1 w1615374088
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 N5CzKW88F^ShIK@<7Vek12
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 K8IbX`K5[Y1gJUKg2X_071
+R0
+Z8 8AND2Gate.vho
+Z9 FAND2Gate.vho
+l0
+L34
+V2cVJG05_e6=Uz?Nod[I>k3
+!s100 6P5081S0<UV5Wd<=Nb03E1
+Z10 OV;C;10.5b;63
+32
+Z11 !s110 1615374090
+!i10b 1
+Z12 !s108 1615374090.000000
+Z13 !s90 -work|work|AND2Gate.vho|
+Z14 !s107 AND2Gate.vho|
+!i113 1
+Z15 o-work work
+Z16 tExplicit 1 CvgOpt 0
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 8 and2gate 0 22 2cVJG05_e6=Uz?Nod[I>k3
+l60
+L42
+V>Ma482k<IQL[BSk9=RzE91
+!s100 Tgd4Hf62<P_d`DjH76a1H2
+R10
+32
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16
+Eand2gate_vhd_vec_tst
+Z17 w1615374085
+R5
+R6
+R0
+Z18 8NAND2Gate.vwf.vht
+Z19 FNAND2Gate.vwf.vht
+l0
+L31
+VH8mFDa`DcETlh4`Gol:C@1
+!s100 ^M0I9`aebNHgQD[URo]R11
+R10
+32
+R11
+!i10b 1
+R12
+Z20 !s90 -work|work|NAND2Gate.vwf.vht|
+Z21 !s107 NAND2Gate.vwf.vht|
+!i113 1
+R15
+R16
+Aand2gate_arch
+R5
+R6
+DEx4 work 20 and2gate_vhd_vec_tst 0 22 H8mFDa`DcETlh4`Gol:C@1
+l46
+L33
+V2G?7LTGlJYjXbAG_[B2mZ1
+!s100 PH[l2_BIeahfRS:GhJBmo1
+R10
+32
+R11
+!i10b 1
+R12
+R20
+R21
+!i113 1
+R15
+R16
+Enand2gate
+Z22 w1615374342
+R2
+R3
+R4
+R5
+R6
+R7
+R0
+R8
+R9
+l0
+L34
+VL;=TKgc3`U^S5R@HW<[NO1
+!s100 _2<3X_DQ@<b[cECC2>6P^0
+R10
+32
+Z23 !s110 1615374343
+!i10b 1
+Z24 !s108 1615374343.000000
+R13
+R14
+!i113 1
+R15
+R16
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 9 nand2gate 0 22 L;=TKgc3`U^S5R@HW<[NO1
+l61
+L42
+VXYYNHECCJH^za^5CnkAo11
+!s100 KzKC;bLMdLa3D_SKLJd>I2
+R10
+32
+R23
+!i10b 1
+R24
+R13
+R14
+!i113 1
+R15
+R16
+Enand2gate_vhd_vec_tst
+Z25 w1615374339
+R5
+R6
+R0
+R18
+R19
+l0
+L31
+VC1E3gU=QY4imChhPMPooi0
+!s100 HF;KnnLFgh<lSJdjf20<F3
+R10
+32
+Z26 !s110 1615374344
+!i10b 1
+R24
+R20
+R21
+!i113 1
+R15
+R16
+Anand2gate_arch
+R5
+R6
+Z27 DEx4 work 21 nand2gate_vhd_vec_tst 0 22 C1E3gU=QY4imChhPMPooi0
+l46
+L33
+VI:j]Anb]Zf>9oZ0QdG;?N3
+!s100 6l5QlS_JQ1S30ROGo^;LC1
+R10
+32
+R26
+!i10b 1
+R24
+R20
+R21
+!i113 1
+R15
+R16

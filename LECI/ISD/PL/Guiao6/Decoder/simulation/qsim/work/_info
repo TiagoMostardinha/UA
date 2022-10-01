@@ -1,0 +1,163 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/tiago/DiscoD/UA/ISD/PL/Guiao6/Decoder/simulation/qsim
+vDec2_4
+Z1 !s110 1639429484
+!i10b 1
+!s100 POAZf=m>1UIn?8z>fd14h0
+IDE9mc^HeZRLmhg25E>^?A0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1639429481
+Z3 8Dec2_4.vo
+Z4 FDec2_4.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1639429484.000000
+Z8 !s107 Dec2_4.vo|
+Z9 !s90 -work|work|Dec2_4.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@dec2_4
+vDec2_4_vlg_vec_tst
+R1
+!i10b 1
+!s100 N]^C<3UlDF?l]`Y2YVmKE3
+I10?SbQ@4U48]J?Rn6R:If0
+R2
+R0
+w1639429479
+8Dec2_4_Test.vwf.vt
+FDec2_4_Test.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Dec2_4_Test.vwf.vt|
+!s90 -work|work|Dec2_4_Test.vwf.vt|
+!i113 1
+R10
+R11
+n@dec2_4_vlg_vec_tst
+vDec4_16
+Z13 !s110 1639439653
+!i10b 1
+!s100 :7_kVCM>f82b][:6aN2DN0
+IBW?B0?aB;B=O;1j5z8BPI1
+R2
+R0
+w1639439652
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1639439653.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@dec4_16
+vDec4_16_vlg_vec_tst
+R13
+!i10b 1
+!s100 [Akf>gSmflN9?<JdXaA7Y1
+IKlX_FJM0o`;zVUWkNbV=f0
+R2
+R0
+w1639439651
+8Dec4_16_Test.vwf.vt
+FDec4_16_Test.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R14
+!s107 Dec4_16_Test.vwf.vt|
+!s90 -work|work|Dec4_16_Test.vwf.vt|
+!i113 1
+R10
+R11
+n@dec4_16_vlg_vec_tst
+vEx2_Part2
+Z15 !s110 1639440545
+!i10b 1
+!s100 N^01@;l1HF0lVDn6iG4Ij2
+IS@dI2kMg>G4f9MO5dISkj2
+R2
+R0
+Z16 w1639440544
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z17 !s108 1639440545.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@ex2_@part2
+vEx2_Part2_vlg_vec_tst
+R15
+!i10b 1
+!s100 Yg^QY[YOgke@zBk;fWm:82
+I5WRW0BO0CjGNH]oFnT9Oo2
+R2
+R0
+w1639440543
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R17
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+n@ex2_@part2_vlg_vec_tst
+vhard_block
+R15
+!i10b 1
+!s100 Ql^0PRlaMU9eEzGdga;6M0
+Ic_3;XTz@I`nZF]CVH`6od3
+R2
+R0
+R16
+R3
+R4
+L0 143
+R6
+r1
+!s85 0
+31
+R17
+R8
+R9
+!i113 1
+R10
+R11

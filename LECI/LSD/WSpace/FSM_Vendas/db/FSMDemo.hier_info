@@ -1,0 +1,40 @@
+|FSM_Main
+clk => PS~1.DATAIN
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+rst => PS.OUTPUTSELECT
+rst => PS.e0.DATAIN
+NewTime << Selector3.DB_MAX_OUTPUT_PORT_TYPE
+TimeValue[0] << <GND>
+TimeValue[1] << TimeValue[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+TimeValue[2] << TimeValue[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+TimeValue[3] << TimeValue[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+TimerEnable << TimerEnable$latch.DB_MAX_OUTPUT_PORT_TYPE
+Time_exp => Selector3.IN4
+Time_exp => Selector0.IN3
+Time_exp => Selector0.IN4
+Time_exp => Selector0.IN5
+Time_exp => Selector9.IN1
+Fanta => NS.OUTPUTSELECT
+Fanta => NS.OUTPUTSELECT
+Fanta => NS.OUTPUTSELECT
+Fanta => Selector7.IN0
+SumoLi => NS.OUTPUTSELECT
+SumoLi => NS.OUTPUTSELECT
+SumoLi => NS.DATAA
+SumoPes => NS.DATAA
+SumoPes => NS.DATAA
+Sel_Word[0] << Sel_Word[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Sel_Word[1] << Sel_Word[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Sel_Word[2] << Sel_Word[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+Sel_Word[3] << <GND>
+Ledr << Ledr.DB_MAX_OUTPUT_PORT_TYPE
+Ledg << Ledg.DB_MAX_OUTPUT_PORT_TYPE
+debug[0] << WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+debug[1] << WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+debug[2] << WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+

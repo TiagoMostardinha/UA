@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/tiago/DiscoD/UA/LSD/WSpace/Encoder4_2/En4_2.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/users/tiago/discod/intel/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/Users/tiago/DiscoD/UA/LSD/WSpace/Encoder4_2/db/En4_2Demo.cbx.xml
+design_name = En4_2
+instance = comp, \out0[0]~output\, out0[0]~output, En4_2, 1
+instance = comp, \out0[1]~output\, out0[1]~output, En4_2, 1
+instance = comp, \in0[3]~input\, in0[3]~input, En4_2, 1
+instance = comp, \in0[1]~input\, in0[1]~input, En4_2, 1
+instance = comp, \in0[2]~input\, in0[2]~input, En4_2, 1
+instance = comp, \out0~0\, out0~0, En4_2, 1
+instance = comp, \out0~1\, out0~1, En4_2, 1
+instance = comp, \in0[0]~input\, in0[0]~input, En4_2, 1

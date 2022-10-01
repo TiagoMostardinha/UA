@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "timeExp",
+					"strict" : false
+				},
+				{
+					"name" : "newTime",
+					"strict" : false
+				},
+				{
+					"name" : "enable",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "timeVal[2]",
+					"strict" : false
+				},
+				{
+					"name" : "timeVal[0]",
+					"strict" : false
+				},
+				{
+					"name" : "timeVal[1]",
+					"strict" : false
+				},
+				{
+					"name" : "timeVal[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
