@@ -25,7 +25,8 @@ main: 	la	$a0,str1
 	
 	li 	$t2,0			# i = 0
 	li	$t4,0			# flag = 0
-	
+
+#while:	bge	$t2,32,endfor
 do: 					# do{
 	andi	$t1, $t0, 0x80000000	#	bit = value & 0x80000000
 	srl 	$t1, $t1, 31		#	bit = (value & 0x80000000) >> 31
