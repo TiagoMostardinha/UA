@@ -44,3 +44,35 @@ k = 1;          % rapaz
 n = 2;          % em 2 filhos
 
 n_filhos = sum(rand(n,N) < 0.5);    
+
+
+
+%% Codigo 1e
+
+N = 1e5;        % numero de lancamentos
+p = 0.5;        % probabilidade ser rapaz
+k = 1;          % rapaz
+n = 5;          % em 5 filhos
+
+n_filhos = rand(n,N) < 0.5
+
+A = sum(n_filhos) >= 1;
+B = sum(n_filhos) == 2;
+
+prob = sum(A & B) / sum(A)
+
+
+%% Codigo 1f
+
+N = 1e5;        % numero de lancamentos
+p = 0.5;        % probabilidade ser rapaz
+k = 1;          % rapaz
+n = 5;          % em 5 filhos
+
+n_filhos = rand(n,N) < 0.5
+
+A = sum(n_filhos) >= 1;
+B = sum(n_filhos) >= 2;
+
+prob = sum(A & B) / sum(A)
+
