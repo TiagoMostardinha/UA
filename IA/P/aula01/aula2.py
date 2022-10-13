@@ -1,4 +1,5 @@
 import math
+from functools import reduce
 
 #Exercicio 4.1
 impar = lambda x : x%2!=0
@@ -26,19 +27,15 @@ def quantificador_universal(lista, f):
 #Exercicio 4.9
 def ordem(lista, f):
     if not lista: return None
-    if len(lista) == 1:
-        return lista[0]
-    
-    menor = ordem(lista[1:],f)
-    
-    if f(lista[0], menor):
-        return lista[0]
-    return menor
+    return reduce(lambda ret,elem: elem if f(elem,ret) else ret, lista)
 
 #Exercicio 4.10
 def filtrar_ordem(lista, f):
-    pass
+    if not lista: return None
+    n = ordem(lista,f)
+    return (n, list(filter(lambda elem: elem!=n, lista)))
 
 #Exercicio 5.2
 def ordenar_seleccao(lista, ordem):
-    pass
+    if not lista: return None
+    return sorted(lista, reverse=ordem(1,0)==1)
