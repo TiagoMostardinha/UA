@@ -1,29 +1,68 @@
 import os
 import sys
+from cryptography.hazmat.primitives import hashes, padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 
-def encrypt_function(plaintext):
-    key = os.urandom(32)
+ALGORITHMS = [ "AES-128", "ChaCha20" ]
+
+class Data_cipher:
+    def __init__(self, data, cipher,cipher_key):
+        self.data = data
+        self.cipher = cipher
+        self.cipher_key = cipher_key
+
+###############################################
+
+def encrypt_function(data,cipher_key):
+    salt = os.urandom(32)
     iv = os.urandom(16)
     
-    cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
-    encryptor = cipher.encryptor()
-    # the buffer needs to be at least len(data) + n - 1 where n is cipher/mode block size in bytes
-    buf = bytearray(len(plaintext))
-    len_encrypted = encryptor.update_into(plaintext, buf)
-    # get the ciphertext from the buffer reading only the bytes written to it (len_encrypted)
-    return bytes(buf[:len_encrypted]) + encryptor.finalize()
+    if cipher_key == "AES-128":
+        cipher = Cipher(algorithms.AES(salt), modes.CBC(iv))
+    elif cipher_key == "ChaCha20":
+        cipher = Cipher(algorithms.ChaCha20(salt,iv),mode=None)
     
+    encryptor = cipher.encryptor()
+    
+    # padding
+    if cipher_key == "AES-128":
+        padder = padding.PKCS7(128).padder()
+        padded_data = padder.update(data) + padder.finalize()
+        encrypted_data = encryptor.update(padded_data) + encryptor.finalize()
+    elif cipher_key == "ChaCha20":
+        encrypted_data = encryptor.update(data) + encryptor.finalize()
+    
+    
+    return Data_cipher(encrypted_data,cipher,cipher_key)
+
+
+
+def decrypt_function(object_ct):
+    data = object_ct.data
+    cipher = object_ct.cipher
+    cipher_key = object_ct.cipher_key
+    
+    
+    decrypted_data = cipher.decryptor()
+    return decrypted_data.update(data)
+    
+
+ ###############################################   
 
 def main():
     # check argv < 3
-    if not len(sys.argv) < 3:
+    if not len(sys.argv) < 4:
+        print("Usage: python3 cipher-funtion.py <input_file> <key_gen_name> (mode)")
         exit(1)
         
     # read argv
     filename = sys.argv[1]
-    # cypher_key = sys.argv[2]
+    cipher_key = sys.argv[2]
+    
+    if cipher_key not in ALGORITHMS:
+        print("Error - Invalid algorithm specified")        
+        exit(1)
     
     # check if files exists
     if not os.path.exists(sys.argv[1]):
@@ -34,17 +73,17 @@ def main():
     plaintext = file.read()
     
     # encrypt the context of the file
-    ct = encrypt_function(plaintext)
+    object_ct = encrypt_function(plaintext,cipher_key)
     
-    print(ct)
+    print("\nKEY "+str(object_ct.cipher_key)+":\n"+str(object_ct.data))
     
+    input()
     
-    
-    
-    
-    
+    decrypted_data = decrypt_function(object_ct)
     
     
     
     
-main()
+    
+if __name__ == "__main__":
+    main()
