@@ -43,15 +43,21 @@ def decrypt_function(object_ct):
     cipher = object_ct.cipher
     cipher_key = object_ct.cipher_key
     
+    if cipher_key == "AES-128":
+        unpadder = padding.PKCS7(128).unpadder()
+        unpadded_data = unpadder.update(data)
+        decrypted_data = cipher.decryptor()
+        return decrypted_data.update(unpadded_data) + decrypted_data.finalize()
     
-    decrypted_data = cipher.decryptor()
-    return decrypted_data.update(data)
+    elif cipher_key == "ChaCha20":
+        decrypted_data = cipher.decryptor()
+        return decrypted_data.update(data)
     
 
  ###############################################   
 
 def main():
-    # check argv < 3
+    # check argv < 4
     if not len(sys.argv) < 4:
         print("Usage: python3 cipher-funtion.py <input_file> <key_gen_name> (mode)")
         exit(1)
@@ -75,11 +81,13 @@ def main():
     # encrypt the context of the file
     object_ct = encrypt_function(plaintext,cipher_key)
     
-    print("\nKEY "+str(object_ct.cipher_key)+":\n"+str(object_ct.data))
+    print("\nKEY "+str(object_ct.cipher_key)+": (encrypt)\n"+str(object_ct.data))
     
     input()
     
     decrypted_data = decrypt_function(object_ct)
+    print("\nKEY "+str(object_ct.cipher_key)+": (decrypt)\n"+str(decrypted_data).decode("utf-8"))
+    
     
     
     
