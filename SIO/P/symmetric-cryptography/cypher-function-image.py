@@ -5,36 +5,45 @@ from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 
 ALGORITHMS = [ "AES-128", "ChaCha20" ]
+ALG_TYPES= ["CBC", "ECB", "OFB","CFB"]
 
 class Data_cipher:
-    def __init__(self, data, cipher,cipher_key):
+    def __init__(self, data, cipher,cipher_key,mode):
         self.data = data
         self.cipher = cipher
         self.cipher_key = cipher_key
+        self.mode = mode
 
 ###############################################
 
-def encrypt_function(data,cipher_key):
+def encrypt_function(object_ct):
     key = os.urandom(32)
     iv = os.urandom(16)
     
-    if cipher_key == "AES-128":
-        cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
-    elif cipher_key == "ChaCha20":
-        cipher = Cipher(algorithms.ChaCha20(key,iv),mode=None)
+    if object_ct.cipher_key == "AES-128":
+        if object_ct.mode == "CBC":
+            object_ct.cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
+        if object_ct.mode == "ECB":
+            object_ct.cipher = Cipher(algorithms.AES(key), modes.ECB())
+        if object_ct.mode == "OFB":
+            object_ct.cipher = Cipher(algorithms.AES(key), modes.OFB(iv))
+        if object_ct.mode == "CFB":
+            object_ct.cipher = Cipher(algorithms.AES(key), modes.CFB(iv))
+    elif object_ct.cipher_key == "ChaCha20":
+        object_ct.cipher = Cipher(algorithms.ChaCha20(key,iv),mode=None)
     
-    encryptor = cipher.encryptor()
+    encryptor = object_ct.cipher.encryptor()
     
     # padding
-    if cipher_key == "AES-128":
+    if object_ct.cipher_key == "AES-128":
         padder = padding.PKCS7(128).padder()
-        padded_data = padder.update(data) + padder.finalize()
+        padded_data = padder.update(object_ct.data) + padder.finalize()
         encrypted_data = encryptor.update(padded_data) + encryptor.finalize()
-    elif cipher_key == "ChaCha20":
-        encrypted_data = encryptor.update(data) + encryptor.finalize()
+    elif object_ct.cipher_key == "ChaCha20":
+        encrypted_data = encryptor.update(object_ct.data) + encryptor.finalize()
     
     
-    return Data_cipher(encrypted_data,cipher,cipher_key)
+    return Data_cipher(encrypted_data,object_ct.cipher,object_ct.cipher_key,object_ct.mode)
 
 
 
@@ -54,20 +63,34 @@ def decrypt_function(object_ct):
         return decrypted_data.update(data)
     
 
+def to_file(data,name):
+    with open(name, 'wb') as output_file:
+        output_file.write(data)
+        output_file.close()
+
  ###############################################   
 
 def main():
-    # check argv < 4
-    if not len(sys.argv) < 4:
-        print("Usage: python3 cipher-funtion.py <input_file> <key_gen_name> (mode)")
+    # check argv < 5
+    if not len(sys.argv) < 5 and len(sys.argv) > 2:
+        print("Usage: python3 cipher-funtion.py <input_file> <key_gen_name> <mode>")
         exit(1)
         
     # read argv
     filename = sys.argv[1]
     cipher_key = sys.argv[2]
     
+    if len(sys.argv) == 3:
+        mode = "CBC"
+    else:
+        mode = sys.argv[3]
+    
     if cipher_key not in ALGORITHMS:
         print("Error - Invalid algorithm specified")        
+        exit(1)
+    
+    if mode not in ALG_TYPES:
+        print("Error - Invalid mode specified")        
         exit(1)
     
     # check if files exists
@@ -79,24 +102,19 @@ def main():
     plaintext = file.read()
     
     # encrypt the context of the file
-    object_ct = encrypt_function(plaintext,cipher_key)
+    object_ct = encrypt_function(Data_cipher(plaintext,None,cipher_key,mode))
     
     print("\nKEY "+str(object_ct.cipher_key)+": (encrypt)\n"+str(object_ct.data))
+    
+    to_file(object_ct.data,"p_enc.bmp")
     
     input()
     
     decrypted_data = decrypt_function(object_ct)
     
-    # Since decrypted data starts with b' ... (means it will be in binary), i need to decode it in utf-8 again,so i use an auxiliar file to write and reading and after that it it will be deleted
-    with open("aux.txt", 'wb') as output_file:
-        output_file.write(decrypted_data)
-        output_file.close()
-        
-        data_utf8 = str(open("aux.txt",'r').read())
-        print("\nKEY "+str(object_ct.cipher_key)+": (decrypt)\n"+str(data_utf8))
-        
-        # delete aux.txt file
-        os.popen("rm aux.txt")
+    to_file(decrypted_data,"dec.bmp")
+    
+    
     
     
     
