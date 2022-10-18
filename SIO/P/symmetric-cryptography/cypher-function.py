@@ -4,7 +4,7 @@ from cryptography.hazmat.primitives import hashes, padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 
-ALGORITHMS = [ "AES-128", "ChaCha20" ]
+ALGORITHMS = [ "AES128", "ChaCha20" ]
 
 class Data_cipher:
     def __init__(self, data, cipher,cipher_key):
@@ -18,7 +18,7 @@ def encrypt_function(data,cipher_key):
     key = os.urandom(32)
     iv = os.urandom(16)
     
-    if cipher_key == "AES-128":
+    if cipher_key == "AES128":
         cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
     elif cipher_key == "ChaCha20":
         cipher = Cipher(algorithms.ChaCha20(key,iv),mode=None)
@@ -26,7 +26,7 @@ def encrypt_function(data,cipher_key):
     encryptor = cipher.encryptor()
     
     # padding
-    if cipher_key == "AES-128":
+    if cipher_key == "AES128":
         padder = padding.PKCS7(128).padder()
         padded_data = padder.update(data) + padder.finalize()
         encrypted_data = encryptor.update(padded_data) + encryptor.finalize()
@@ -43,9 +43,9 @@ def decrypt_function(object_ct):
     cipher = object_ct.cipher
     cipher_key = object_ct.cipher_key
     
-    if cipher_key == "AES-128":
+    if cipher_key == "AES128":
         unpadder = padding.PKCS7(128).unpadder()
-        unpadded_data = unpadder.update(data)
+        unpadded_data = unpadder.update(data) + unpadder.finalize()
         decrypted_data = cipher.decryptor()
         return decrypted_data.update(unpadded_data) + decrypted_data.finalize()
     

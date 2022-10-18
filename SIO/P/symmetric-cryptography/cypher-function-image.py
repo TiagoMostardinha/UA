@@ -4,7 +4,7 @@ from cryptography.hazmat.primitives import hashes, padding
 from cryptography.hazmat.primitives.ciphers import Cipher, algorithms, modes
 
 
-ALGORITHMS = [ "AES-128", "ChaCha20" ]
+ALGORITHMS = [ "AES128", "ChaCha20" ]
 ALG_TYPES= ["CBC", "ECB", "OFB","CFB"]
 
 class Data_cipher:
@@ -20,7 +20,7 @@ def encrypt_function(object_ct):
     key = os.urandom(32)
     iv = os.urandom(16)
     
-    if object_ct.cipher_key == "AES-128":
+    if object_ct.cipher_key == "AES128":
         if object_ct.mode == "CBC":
             object_ct.cipher = Cipher(algorithms.AES(key), modes.CBC(iv))
         if object_ct.mode == "ECB":
@@ -35,7 +35,7 @@ def encrypt_function(object_ct):
     encryptor = object_ct.cipher.encryptor()
     
     # padding
-    if object_ct.cipher_key == "AES-128":
+    if object_ct.cipher_key == "AES128":
         padder = padding.PKCS7(128).padder()
         padded_data = padder.update(object_ct.data) + padder.finalize()
         encrypted_data = encryptor.update(padded_data) + encryptor.finalize()
@@ -52,7 +52,7 @@ def decrypt_function(object_ct):
     cipher = object_ct.cipher
     cipher_key = object_ct.cipher_key
     
-    if cipher_key == "AES-128":
+    if cipher_key == "AES128":
         unpadder = padding.PKCS7(128).unpadder()
         unpadded_data = unpadder.update(data)
         decrypted_data = cipher.decryptor()
