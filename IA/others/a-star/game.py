@@ -1,6 +1,6 @@
-import pygame
-
 from a_star import *
+
+# nodes = spots in the game
 
 # Window
 WIDTH = 800
@@ -74,7 +74,7 @@ class Node:
         pygame.draw.rect(
             win, self.color, (self.x, self.y, self.width, self.width))
 
-    def update_neighbors(self, grid):
+    def update_neighbors(self, grid):           # CHECK IF THEY ARE BARRIERS
         self.neighbors = []
         # DOWN
         if self.row < self.total_rows - 1 and not grid[self.row + 1][self.col].is_barrier():
