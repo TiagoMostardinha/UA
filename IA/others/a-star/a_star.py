@@ -29,8 +29,8 @@ def algorithm(draw,grid,start,end):
 		open_set_hash.remove(current)
 
 		if current == end:
-			# reconstruct_path(came_from, end, draw)
-			# end.make_end()
+			reconstruct_path(came_from, end, draw)
+			end.make_end()
 			return True
 
 		for neighbor in current.neighbors:
@@ -52,3 +52,11 @@ def algorithm(draw,grid,start,end):
 			current.make_closed()
 
 	return False
+
+
+
+def reconstruct_path(came_from, current, draw):
+	while current in came_from:
+		current = came_from[current]
+		current.make_path()
+		draw()

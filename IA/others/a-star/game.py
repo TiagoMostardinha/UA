@@ -86,13 +86,6 @@ class Node:
 	def __lt__(self, other):
 		return False
 
-
-def reconstruct_path(came_from, current, draw):
-	while current in came_from:
-		current = came_from[current]
-		current.make_path()
-		draw()
-
 def make_grid(rows, width):
 	grid = []
 	gap = width // rows
