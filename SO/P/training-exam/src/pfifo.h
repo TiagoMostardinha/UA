@@ -19,7 +19,7 @@
 #include  "settings.h"
 
 #include "thread.h"
-#include "process.h"
+//#include "process.h"
 
 typedef struct
 {
@@ -31,9 +31,9 @@ typedef struct
    uint32_t inp;  ///< point of insertion (queue tail)
    uint32_t out;  ///< point of retrieval (queue head)
    uint32_t cnt;  ///< number of items stored
-   pthread_mutex_t access;    // Exclusive access to the FIFO
-   pthread_cond_t not_empty;  // Condition variable to signal that the FIFO is not empty
-   pthread_cond_t not_full;   // Condition variable to signal that the FIFO is not full
+   pthread_mutex_t mutex;
+   pthread_cond_t notEmpty;
+   pthread_cond_t notFull;
 } PriorityFIFO;
 
 void init_pfifo(PriorityFIFO* pfifo);

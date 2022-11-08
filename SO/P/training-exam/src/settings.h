@@ -73,4 +73,3 @@
 #define check_valid_name(name) do { if(name[0] == '\0') { printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid patient with name \"%s\"!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, name); exit(EXIT_FAILURE); } } while(0)
 
 #endif
-
