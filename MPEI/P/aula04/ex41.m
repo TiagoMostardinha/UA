@@ -1,9 +1,4 @@
-N = 1e5
-
-alpha = ['a':'z' 'A':'Z'];
-
-genKeys(N,6,alpha,prob);
-
+%
 %% functions
 
 function keys = genKeys(N,iMin,iMax,chars)
