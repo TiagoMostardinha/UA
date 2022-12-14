@@ -1,5 +1,5 @@
 function code =  hashstring(chave, tablesize)
-%  baseado em hashstring the ProgramaÃ§Ã£o II
+%  baseado em hashstring the Programação II
 
 len=length(chave);
 chave= double(chave);
@@ -12,3 +12,4 @@ for i=1:len
     hash= (bitshift(hash,3)+ bitshift(hash,-28))+c;
 end
 code=mod(hash,tablesize);
+
