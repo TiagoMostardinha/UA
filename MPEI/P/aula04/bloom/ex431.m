@@ -1,3 +1,4 @@
+clear;clc;
 %u.data 
 %user   movie   rate    time
 % -> utilizadores que avaliaram conjuntos similares de filmes
@@ -24,7 +25,9 @@ for n = 1:Nu                % Para cada utilizador
 end
 
 tic
-K=50;
+%K=50;
+K=100;
+%K=200;
 MinHashValue=inf(Nu,K);
 
 for i=1:Nu
