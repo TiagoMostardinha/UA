@@ -95,17 +95,14 @@ end_frd:
 # $t1:	st + ns
 max:		# student *max(student *st, int ns, float *media)
 	l.s	$f2,max_grade	# $f2 = -20.0
-	
 	mtc1	$0,$f4		# $f4 = 0.0
+	la	$t0,st_array	# $t0 = p = st
 	
-	la	$t0,st_array	
-	
-	li	$t1,
+	mul	$t1,$a1,44
+	addu	$t1,$t0,$a1
 	
 m_for:	
-	mul
-	
-for(p = st; p < (st + ns); p++) {
+	bge	$t0,$t1,m_endf	# for(p = st; p < (st + ns); p++) {
 sum += p->grade;
 if(p->grade > max_grade)
 {
