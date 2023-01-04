@@ -63,7 +63,7 @@ function BF = check_elem(elem,BF,k)
     for i=1:k
         elem = [elem num2str(i)];
         h = DJB31MA(elem,127);
-        h = mod(h,n);
+        h = mod(h,n) +1;
         if ~BF(h)
             check = false;
             break;
