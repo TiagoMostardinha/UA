@@ -18,8 +18,8 @@ average:	# double average(double *array, int n) {
 	
 a_for:	ble	$t0,0,a_endf	# for(; i > 0; i--) {
 	
-	sub	$t1,$t0,1	# i - 1
-	sll	$t1,$t0,3	# 8*(i-1)
+	addi	$t1,$t0,1	# i - 1
+	sll	$t1,$t1,3	# 8*(i-1)
 	addu	$t2,$a0,$t1
 	l.d	$f4,0($t2)	# array[i-1]
 	
