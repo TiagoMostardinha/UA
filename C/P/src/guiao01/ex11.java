@@ -3,24 +3,31 @@ package guiao01;
 import java.io.IOException;
 
 class ex11{
-    static String readString() throws IOException{
+    static String readString(){
         String result = new String();
         int input;
         byte[] chars = new byte[1];
 
-        for(;;){
-            input = System.in.read();
-            if (input == -1){
-                return result;
-            }
-            chars[0] = (byte) input;
+        try {
+            for(;;){
+                input = System.in.read();
+                if (input == -1){
+                    return result;
+                }
+                chars[0] = (byte) input;
 
-            if (Character.isWhitespace(chars[0]) && result.length() == 0){
-                continue;
-            }else{
-                return result += new String(chars,"UTF-8");         
+                if (Character.isWhitespace(chars[0])){
+                    if(result.length() == 0){
+                        continue;
+                    }else{
+                        return result;
+                    }
+                }
+                result += new String(chars,"UTF-8");  
             }
-        }
+        } catch(Exception e) {
+            return result;
+        }       
     }
 
     static Double operand() throws IOException{
