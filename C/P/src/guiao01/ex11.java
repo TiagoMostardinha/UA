@@ -1,5 +1,9 @@
+package guiao01;
+
+import java.io.IOException;
+
 class ex11{
-    static String readString(){
+    static String readString() throws IOException{
         String result = new String();
         int input;
         byte[] chars = new byte[1];
@@ -14,14 +18,12 @@ class ex11{
             if (Character.isWhitespace(chars[0]) && result.length() == 0){
                 continue;
             }else{
-                return ;
+                return result += new String(chars,"UTF-8");         
             }
-            
-            result += new String(chars,"UTF-8");         
         }
     }
 
-    static Double operand(){
+    static Double operand() throws IOException{
     	String value;
     	Double result;
     	
@@ -42,7 +44,7 @@ class ex11{
         }
     }
     
-    static String operation(){
+    static String operation() throws IOException{
         String value;
         
         
@@ -57,10 +59,10 @@ class ex11{
                 continue;
             }
 
-            if (value.charAt(0) == "+" || 
-                value.charAt(0) == "-" || 
-                value.charAt(0) == "*" || 
-                value.charAt(0) == "/" ){
+            if (value.charAt(0) == '+' || 
+                value.charAt(0) == '-' || 
+                value.charAt(0) == '*' || 
+                value.charAt(0) == '/' ){
                 return value;
             }
 
@@ -69,21 +71,21 @@ class ex11{
 
     }
 
-    static void calculator(){
-        Double operand1,operand2;
+    static void calculator() throws IOException{
+        Double operand1,operand2,result;
         String operation;
 
         operand1 = operand();
         operation = operation();
         operand2 = operand();
 
-        if (operation.charAt(0) == "+") {
+        if (operation.charAt(0) == '+') {
             result = operand1 + operand2;
         }
-        else if(operation.charAt(0) == "-") {
+        else if(operation.charAt(0) == '-') {
             result = operand1 - operand2;
         }
-        else if(operation.charAt(0) == "*") {
+        else if(operation.charAt(0) == '*') {
             result = operand1 * operand2;
         }
         else{
@@ -93,7 +95,7 @@ class ex11{
         System.out.printf("%f\n",result);
     }
 
-    static void main(String args[]){
+    public static void main(String args[]) throws IOException{
         for(;;){
             calculator();
         }
