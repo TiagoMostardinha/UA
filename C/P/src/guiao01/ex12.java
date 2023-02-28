@@ -26,7 +26,7 @@ class ex12{
         String line,tokens[];
         Double value;
         for(;;){
-            input.nextLine();
+            line = input.nextLine();
             tokens = line.split(" +");
             if (Character.isLetter(tokens[0].charAt(0))){
                 if (tokens[1].equals("=")) {
