@@ -1,0 +1,16 @@
+marco 10 apresentação + demo
+
+backend:
+- usuario dar login criar classe user tiver atributis estaticos e tivesse guardado da base dados e quando inicia criar instacia do user
+- serviço de autenticacao -> sever.py
+- abstrair metadados dos videos
+
+- metodo associado 
+cria instacnia com a s credenciais do usuario
+- 1o nomne e palavra passe 
+- 2odepois login abuscar dados
+
+metadados relativos aos projetos e vídeos -> usar sideproject
+
+- usar o chatgpt 
+para usar como starting up
