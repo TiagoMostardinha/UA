@@ -48,8 +48,8 @@ int main(void)
         do
         {
             send2display(counter);
-            delay(20); // wait 20 ms (1/50Hz)
-        } while (++i < 50);
+            delay(10); // wait 20 ms (1/50Hz)
+        } while (++i < 100);
         counter++; // increment counter (mod 256)
     }
     return 0;
