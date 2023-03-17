@@ -1,0 +1,14 @@
+# Thumbs.db
+Thumbs.db
+
+# .vscode
+.vscode/
+
+#venv
+venv/
+
+#pycache
+__pycache__/
+
+#java
+*.class
