@@ -12,3 +12,6 @@ __pycache__/
 
 #java
 *.class
+
+#Compiladores
+bin/
