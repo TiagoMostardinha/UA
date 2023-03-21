@@ -8,6 +8,8 @@
 # 5. antlr4-build
 # 6. antlr4-run
 
+#antlr4-test Calculator program -gui < test
+
 # Build and Run Antlr4 Project
 
 # Check parameters
