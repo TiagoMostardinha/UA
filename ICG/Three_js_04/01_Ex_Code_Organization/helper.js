@@ -19,9 +19,20 @@ const helper = {
         // ************************** //
         // Add camera
         // ************************** //
+        // const width = window.innerWidth;
+        // const height = window.innerHeight;
+        // const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 500);
+        // sceneElements.camera = camera;
+        // camera.position.set(0, 5, 5);
+        // camera.lookAt(0, 0, 0);
+
+
+        // ************************** //
+        // Add Orthographic camera
+        // ************************** //
         const width = window.innerWidth;
         const height = window.innerHeight;
-        const camera = new THREE.PerspectiveCamera(45, width / height, 0.1, 500);
+        const camera = new THREE.OrthographicCamera( -5,4,5,-4,0.1,500);
         sceneElements.camera = camera;
         camera.position.set(0, 5, 5);
         camera.lookAt(0, 0, 0);
@@ -48,6 +59,19 @@ const helper = {
         spotLight.castShadow = true;
         spotLight.shadow.mapSize.width = 2048;
         spotLight.shadow.mapSize.height = 2048;
+
+
+        // ***************************** //
+        // Add a second spotlight (with shadows)
+        // ***************************** //
+        const spotLight2 = new THREE.SpotLight('rgb(255, 255, 255)', 0.8);
+        spotLight2.position.set(8, 8, 0);
+        sceneElements.sceneGraph.add(spotLight2);
+
+        // Setup shadow properties for the spotlight
+        spotLight2.castShadow = true;
+        spotLight2.shadow.mapSize.width = 2048;
+        spotLight2.shadow.mapSize.height = 2048;
 
 
         // *********************************** //
