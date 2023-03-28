@@ -2,7 +2,7 @@
 Thumbs.db
 
 # .vscode
-.vscode/
+#.vscode/
 
 #venv
 venv/
@@ -13,5 +13,3 @@ __pycache__/
 #java
 *.class
 
-#Compiladores
-bin/
