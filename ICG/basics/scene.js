@@ -129,4 +129,4 @@ const spotLightHelper = new THREE.SpotLightHelper(spotLight);
 scene.add(spotLightHelper);
 
 // ************************** //
-rendeer.render(scene, camera);
+renderer.render(scene, camera);
