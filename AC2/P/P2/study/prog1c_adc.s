@@ -1,3 +1,4 @@
+    .data
     .equ SFR_BASE_HI, 0xBF88        # 16 MSbits of SFR area
     .equ TRISE, 0x6100              # TRISE address is 0xBF886100
     .equ PORTE, 0x6110              # PORTE address is 0xBF886110
@@ -12,23 +13,21 @@
 main:
     lui     $t0,SFR_BASE_HI
 
-    lw      $t1,TRISE($t0)
-    andi    $t1,$t1,0xFFF0
-    sw      $t1,TRISE($t0)
-
     lw      $t1,TRISB($t0)
-    ori     $t1,$t1,0x000f
+    ori     $t1,$t1,0x000F
     sw      $t1,TRISB($t0)
 
-
+    lw      $t1,TRISE($t0)
+    ori     $t1,$t1,0xff00
+    sw      $t1,TRISE($t0)
 
 loop:
     lw      $t1,PORTB($t0)
-    andi    $t1,$t1,0x000F
+    andi    $t1,$t1,0x000f
 
     lw      $t2,LATE($t0)
-    andi    $t2,$t2,0xFFF0
-    
+    andi    $t2,$t2,0xff00
+
     andi    $t3,$t1,0x000C
     srl     $t3,$t3,2
     or      $t2,$t3,$t2
@@ -45,9 +44,14 @@ loop:
     sll     $t3,$t3,1
     or      $t2,$t3,$t2
 
+    sll     $t2,$t2,4
+    or      $t2,$t2,$t1
+
     sw      $t2,LATE($t0)
 
     j       loop
+
 end_loop:
     li      $v0,0
     jr      $ra
+    
