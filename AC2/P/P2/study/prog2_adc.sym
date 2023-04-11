@@ -1,0 +1,26 @@
+GAS LISTING study/prog2_adc.s 			page 1
+
+
+DEFINED SYMBOLS
+   study/prog2_adc.s:2      *ABS*:000000000000bf88 SFR_BASE_HI
+   study/prog2_adc.s:3      *ABS*:0000000000006100 TRISE
+   study/prog2_adc.s:4      *ABS*:0000000000006110 PORTE
+   study/prog2_adc.s:5      *ABS*:0000000000006120 LATE
+   study/prog2_adc.s:6      *ABS*:0000000000006040 TRISB
+   study/prog2_adc.s:7      *ABS*:0000000000006050 PORTB
+   study/prog2_adc.s:8      *ABS*:0000000000006060 LATB
+   study/prog2_adc.s:9      *ABS*:0000000000000002 getChar
+   study/prog2_adc.s:14     .text:0000000000000000 main
+   study/prog2_adc.s:24     .text:0000000000000018 loop
+   study/prog2_adc.s:31     .text:0000000000000028 if0
+   study/prog2_adc.s:37     .text:0000000000000040 if1
+   study/prog2_adc.s:65     .text:00000000000000a0 end
+   study/prog2_adc.s:43     .text:0000000000000058 if2
+   study/prog2_adc.s:49     .text:0000000000000070 if3
+   study/prog2_adc.s:55     .text:0000000000000088 else
+   study/prog2_adc.s:81     .text:00000000000000b8 delay
+   study/prog2_adc.s:70     .text:00000000000000a8 end_loop
+   study/prog2_adc.s:84     .text:00000000000000c0 loop_delay
+   study/prog2_adc.s:92     .text:00000000000000e8 end_delay
+
+NO UNDEFINED SYMBOLS
