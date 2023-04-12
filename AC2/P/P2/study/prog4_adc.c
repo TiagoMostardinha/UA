@@ -43,7 +43,7 @@ int main(void)
     while (1)
     {
         int i = 0, n = 0x0;
-        char ch = getChar();
+        char ch = inkey();
 
         switch (ch)
         {
@@ -70,7 +70,7 @@ int main(void)
         {
             send2displays(n);
             delay(10);
-        } while (++i < 100);
+        } while (++i < 50);
     }
     return 0;
 }

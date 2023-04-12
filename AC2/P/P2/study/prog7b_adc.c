@@ -58,7 +58,7 @@ int main(void)
         putChar('0' | (PORTB & 0x0002) >> 1);
         putChar('0' | (PORTB & 0x0001));
 
-       // putChar('\r');
+       putChar('\r');
 
         freq = ((voltageConversion(sum_val / 4) * 4) / 33)+1;
 
