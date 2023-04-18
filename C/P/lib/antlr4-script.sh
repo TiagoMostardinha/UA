@@ -9,6 +9,7 @@
 # 6. antlr4-run
 
 #antlr4-test Calculator program -gui < test
+#antlr4-test Frac program < frac.txt
 
 # Build and Run Antlr4 Project
 
