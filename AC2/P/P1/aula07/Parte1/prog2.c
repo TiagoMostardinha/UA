@@ -1,8 +1,8 @@
 #include <detpic32.h>
-#include "../methods/delay.c"
-#include "../methods/voltageConversion.c"
-#include "../methods/send2displays.c"
-#include "../methods/toBCD.c"
+#include "../../methods/delay.c"
+#include "../../methods/voltageConversion.c"
+#include "../../methods/send2displays.c"
+#include "../../methods/toBCD.c"
 
 volatile unsigned char voltage = 0;
 
