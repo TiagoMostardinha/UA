@@ -5,11 +5,13 @@ public class Interpreter extends CalcFracBaseVisitor<Fraction> {
 
    private HashMap<String, Fraction> vars = new HashMap<>();
 
-   @Override public Fraction visitProgram(CalcFracParser.ProgramContext ctx) {
+   @Override
+   public Fraction visitProgram(CalcFracParser.ProgramContext ctx) {
       return visitChildren(ctx);
    }
 
-   @Override public Fraction visitStat(CalcFracParser.StatContext ctx) {
+   @Override
+   public Fraction visitStat(CalcFracParser.StatContext ctx) {
       if (ctx.print() != null) {
          return visit(ctx.print());
       } else if (ctx.assignment() != null) {
@@ -19,20 +21,23 @@ public class Interpreter extends CalcFracBaseVisitor<Fraction> {
       }
    }
 
-   @Override public Fraction visitPrint(CalcFracParser.PrintContext ctx) {
+   @Override
+   public Fraction visitPrint(CalcFracParser.PrintContext ctx) {
       Fraction f = visit(ctx.expr());
       System.out.println(f);
       return null;
    }
 
-   @Override public Fraction visitAssignment(CalcFracParser.AssignmentContext ctx) {
+   @Override
+   public Fraction visitAssignment(CalcFracParser.AssignmentContext ctx) {
       String key = ctx.ID().getText();
       Fraction f = visit(ctx.expr());
       vars.put(key, f);
       return f;
    }
 
-   @Override public Fraction visitExprAddSub(CalcFracParser.ExprAddSubContext ctx) {
+   @Override
+   public Fraction visitExprAddSub(CalcFracParser.ExprAddSubContext ctx) {
       if (ctx.op.getText().equals("+")) {
          return visit(ctx.expr(0)).addTo(visit(ctx.expr(1)));
       } else if (ctx.op.getText().equals("-")) {
@@ -42,11 +47,13 @@ public class Interpreter extends CalcFracBaseVisitor<Fraction> {
       }
    }
 
-   @Override public Fraction visitExprParent(CalcFracParser.ExprParentContext ctx) {
+   @Override
+   public Fraction visitExprParent(CalcFracParser.ExprParentContext ctx) {
       return visit(ctx.expr());
    }
 
-   @Override public Fraction visitExprMultDiv(CalcFracParser.ExprMultDivContext ctx) {
+   @Override
+   public Fraction visitExprMultDiv(CalcFracParser.ExprMultDivContext ctx) {
       if (ctx.op.getText().equals("*")) {
          return visit(ctx.expr(0)).mulTo(visit(ctx.expr(1)));
       } else if (ctx.op.getText().equals("/")) {
@@ -56,13 +63,15 @@ public class Interpreter extends CalcFracBaseVisitor<Fraction> {
       }
    }
 
-   @Override public Fraction visitExprReduce(CalcFracParser.ExprReduceContext ctx) {
+   @Override
+   public Fraction visitExprReduce(CalcFracParser.ExprReduceContext ctx) {
       return new Fraction(visit(ctx.expr()));
    }
 
-   @Override public Fraction visitExprPlusMinus(CalcFracParser.ExprPlusMinusContext ctx) {
+   @Override
+   public Fraction visitExprPlusMinus(CalcFracParser.ExprPlusMinusContext ctx) {
       if (ctx.op.getText().equals("+")) {
-         return (new Fraction()) .subTo(visit(ctx.expr()));
+         return (new Fraction()).subTo(visit(ctx.expr()));
       } else if (ctx.op.getText().equals("-")) {
          return visit(ctx.expr());
       } else {
@@ -70,11 +79,13 @@ public class Interpreter extends CalcFracBaseVisitor<Fraction> {
       }
    }
 
-   @Override public Fraction visitExprID(CalcFracParser.ExprIDContext ctx) {
+   @Override
+   public Fraction visitExprID(CalcFracParser.ExprIDContext ctx) {
       return vars.get(ctx.ID().getText());
    }
 
-   @Override public Fraction visitFrac(CalcFracParser.FracContext ctx) {
+   @Override
+   public Fraction visitFrac(CalcFracParser.FracContext ctx) {
       return new Fraction(Integer.parseInt(ctx.Integer(0).getText()), Integer.parseInt(ctx.Integer(1).getText()));
    }
 }
