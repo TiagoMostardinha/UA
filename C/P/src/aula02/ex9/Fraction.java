@@ -1,6 +1,6 @@
 public class Fraction {
-    private int numerator;             // Fraction numerator
-    private int denominator;           // Fraction denominator
+    private int numerator; // Fraction numerator
+    private int denominator; // Fraction denominator
 
     /*-----------------------------------------------------------------
      * constructor
@@ -31,13 +31,13 @@ public class Fraction {
             denominator = 1;
         }
         denominator = (denom < 0 ? -denom : denom);
-        //reduce();
+        // reduce();
     }
-	
-	/*-----------------------------------------------------------------
-	 * constructor
-	 * New constructor that reduces the fraction
-	 */
+
+    /*-----------------------------------------------------------------
+     * constructor
+     * New constructor that reduces the fraction
+     */
     public Fraction(Fraction f) {
         numerator = (f.denominator < 0 ? -f.numerator : f.numerator);
         if (f.denominator == 0) {
@@ -71,8 +71,7 @@ public class Fraction {
     public void setDenominator(int denom) {
         if (denom > 0) {
             denominator = denom;
-        }
-        else if (denom < 0) {
+        } else if (denom < 0) {
             numerator = -numerator;
             denominator = -denom;
         }
@@ -93,12 +92,11 @@ public class Fraction {
     public Fraction addTo(Fraction rhs) {
         Fraction sum = new Fraction();
         sum.denominator = denominator * rhs.denominator;
-        sum.numerator = numerator * rhs.denominator 
-                          + denominator * rhs.numerator;
+        sum.numerator = numerator * rhs.denominator
+                + denominator * rhs.numerator;
         return sum;
     }
 
-	
     /*-----------------------------------------------------------------
      * subTo
      * subtract the parameter Fraction to the current object Fraction 
@@ -106,44 +104,44 @@ public class Fraction {
     public Fraction subTo(Fraction rhs) {
         Fraction sub = new Fraction();
         sub.denominator = denominator * rhs.denominator;
-        sub.numerator = numerator * rhs.denominator 
-                          + (denominator * (-rhs.numerator));
+        sub.numerator = numerator * rhs.denominator
+                + (denominator * (-rhs.numerator));
         return sub;
     }
-	
+
     /*-----------------------------------------------------------------
      * mulTo
      * multiplicate the parameter Fraction to the current object Fraction 
      */
-	public Fraction mulTo(Fraction rhs) {
-		Fraction mul = new Fraction();
-		mul.denominator = denominator * rhs.denominator;
-		mul.numerator = numerator * rhs.numerator;
-		
-		return mul;
-	}		
-	
+    public Fraction mulTo(Fraction rhs) {
+        Fraction mul = new Fraction();
+        mul.denominator = denominator * rhs.denominator;
+        mul.numerator = numerator * rhs.numerator;
+
+        return mul;
+    }
+
     /*-----------------------------------------------------------------
      * divTo
      * divide the parameter Fraction to the current object Fraction 
      */
-	public Fraction divTo(Fraction rhs) {
-		Fraction div  = new Fraction();
-		div.denominator = denominator * rhs.numerator;
-		div.numerator = numerator * rhs.denominator;
-		
-		return div;
-	}	
-	
+    public Fraction divTo(Fraction rhs) {
+        Fraction div = new Fraction();
+        div.denominator = denominator * rhs.numerator;
+        div.numerator = numerator * rhs.denominator;
+
+        return div;
+    }
+
     /*-----------------------------------------------------------------
      * toString
      * convert the Fraction to a String object, e.g., 2/3
      */
     public String toString() {
         if (denominator == 1 || denominator == -1)
-			return "" + numerator;
-		else
-			return numerator + "/" + denominator;
+            return "" + numerator;
+        else
+            return numerator + "/" + denominator;
     }
 
     /*-----------------------------------------------------------------
@@ -167,8 +165,7 @@ public class Fraction {
         }
         if (n > d) {
             largest = n;
-        }
-        else {
+        } else {
             largest = d;
         }
 
