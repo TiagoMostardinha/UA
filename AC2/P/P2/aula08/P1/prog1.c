@@ -2,9 +2,15 @@
 
 int main(void)
 {
+    // fout = fPbclk / (K * (PR2 + 1))
+    // PR2max = 65535
+    // 2 = 20MHz / (K *(65535 +1 ))
+    // K = 20MHz / (2 * 65536) = 152.59 => 256
+
+    // 1 2 4 8 16 32 64 256
 
     // Timer 2 Configuration
-    T3CONbits.TCKPS = 7;    // K = 1:32 = 1:2^5 prescaler (i.e. fout_presc = 625 KHz)
+    T3CONbits.TCKPS = 7;    // K = 1:256 = 1:2^7 prescaler (i.e. fout_presc = 625 KHz)
     PR3 = 39061;            // Fout = 20MHz / (K * (62499 + 1)) = 2 Hz
     TMR3 = 0;               // Reset timer T3 count register
     T3CONbits.TON = 1;      // Enable timer T3 (must be the last command of the
