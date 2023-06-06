@@ -2,14 +2,16 @@ create table genero(
     nome_genero_id int not null,
     content_id int not null,
     foreign key (nome_genero_id) references lista_generos(nome_genero_id),
-    primary key(nome_genero_id),
+    foreign key (content_id) references conteudo(content_id),
+    primary key(nome_genero_id, content_id),
 );
 
 create table premio(
     nome_premio_id int not null,
     content_id int not null,
     foreign key (nome_premio_id) references lista_premios(nome_premio_id),
-    primary key(nome_premio_id),
+    foreign key (content_id) references conteudo(content_id),
+    primary key(nome_premio_id, content_id),
 );
 create table realizador(
     num_cc int not null,
@@ -29,4 +31,3 @@ create table ator(
     foreign key (num_cc) references pessoa(num_cc),
     primary key (ator_id),
 );
-
