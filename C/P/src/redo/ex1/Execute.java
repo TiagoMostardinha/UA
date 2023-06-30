@@ -16,11 +16,23 @@ public class Execute extends HelloBaseVisitor<String> {
 
    @Override
    public String visitGreetings(HelloParser.GreetingsContext ctx) {
-      return "Ola " + ctx.ID().getText();
+      String res = "Ola ";
+
+      for (int i = 0; i < ctx.ID().size(); i++) {
+         res += ctx.ID().get(i) + " ";
+      }
+
+      return res + "\n";
    }
 
    @Override
    public String visitBye(HelloParser.ByeContext ctx) {
-      return "Adeus " + ctx.ID().getText();
+      String res = "Adeus ";
+
+      for (int i = 0; i < ctx.ID().size(); i++) {
+         res += ctx.ID().get(i) + " ";
+      }
+
+      return res + "\n";
    }
 }

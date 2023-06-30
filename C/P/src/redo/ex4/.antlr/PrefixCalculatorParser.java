@@ -1,4 +1,4 @@
-// Generated from /home/tiago/DiscoD/UA/C/P/src/redo/ex1/Hello.g4 by ANTLR 4.9.2
+// Generated from /home/tiago/DiscoD/UA/C/P/src/redo/ex4/PrefixCalculator.g4 by ANTLR 4.9.2
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,32 +9,32 @@ import java.util.Iterator;
 import java.util.ArrayList;
 
 @SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
-public class HelloParser extends Parser {
+public class PrefixCalculatorParser extends Parser {
 	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		T__0=1, T__1=2, ID=3, WS=4, COMMENT=5;
+		T__0=1, T__1=2, T__2=3, T__3=4, NUM=5, NEWLINE=6, WS=7, COMMENT=8;
 	public static final int
-		RULE_program = 0, RULE_stat = 1, RULE_greetings = 2, RULE_bye = 3;
+		RULE_program = 0, RULE_stat = 1, RULE_expr = 2;
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"program", "stat", "greetings", "bye"
+			"program", "stat", "expr"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, "'hello'", "'bye'"
+			null, "'*'", "'/'", "'+'", "'-'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, null, null, "ID", "WS", "COMMENT"
+			null, null, null, null, null, "NUM", "NEWLINE", "WS", "COMMENT"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
@@ -72,7 +72,7 @@ public class HelloParser extends Parser {
 	}
 
 	@Override
-	public String getGrammarFileName() { return "Hello.g4"; }
+	public String getGrammarFileName() { return "PrefixCalculator.g4"; }
 
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
@@ -83,13 +83,13 @@ public class HelloParser extends Parser {
 	@Override
 	public ATN getATN() { return _ATN; }
 
-	public HelloParser(TokenStream input) {
+	public PrefixCalculatorParser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
 	public static class ProgramContext extends ParserRuleContext {
-		public TerminalNode EOF() { return getToken(HelloParser.EOF, 0); }
+		public TerminalNode EOF() { return getToken(PrefixCalculatorParser.EOF, 0); }
 		public List<StatContext> stat() {
 			return getRuleContexts(StatContext.class);
 		}
@@ -109,21 +109,21 @@ public class HelloParser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(11);
+			setState(9);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while (_la==T__0 || _la==T__1) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << T__3) | (1L << NUM) | (1L << NEWLINE))) != 0)) {
 				{
 				{
-				setState(8);
+				setState(6);
 				stat();
 				}
 				}
-				setState(13);
+				setState(11);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			}
-			setState(14);
+			setState(12);
 			match(EOF);
 			}
 		}
@@ -139,11 +139,9 @@ public class HelloParser extends Parser {
 	}
 
 	public static class StatContext extends ParserRuleContext {
-		public GreetingsContext greetings() {
-			return getRuleContext(GreetingsContext.class,0);
-		}
-		public ByeContext bye() {
-			return getRuleContext(ByeContext.class,0);
+		public TerminalNode NEWLINE() { return getToken(PrefixCalculatorParser.NEWLINE, 0); }
+		public ExprContext expr() {
+			return getRuleContext(ExprContext.class,0);
 		}
 		public StatContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -154,22 +152,99 @@ public class HelloParser extends Parser {
 	public final StatContext stat() throws RecognitionException {
 		StatContext _localctx = new StatContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_stat);
+		int _la;
 		try {
-			setState(18);
+			enterOuterAlt(_localctx, 1);
+			{
+			setState(15);
+			_errHandler.sync(this);
+			_la = _input.LA(1);
+			if ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << T__3) | (1L << NUM))) != 0)) {
+				{
+				setState(14);
+				expr();
+				}
+			}
+
+			setState(17);
+			match(NEWLINE);
+			}
+		}
+		catch (RecognitionException re) {
+			_localctx.exception = re;
+			_errHandler.reportError(this, re);
+			_errHandler.recover(this, re);
+		}
+		finally {
+			exitRule();
+		}
+		return _localctx;
+	}
+
+	public static class ExprContext extends ParserRuleContext {
+		public ExprContext(ParserRuleContext parent, int invokingState) {
+			super(parent, invokingState);
+		}
+		@Override public int getRuleIndex() { return RULE_expr; }
+	 
+		public ExprContext() { }
+		public void copyFrom(ExprContext ctx) {
+			super.copyFrom(ctx);
+		}
+	}
+	public static class ExprNumContext extends ExprContext {
+		public TerminalNode NUM() { return getToken(PrefixCalculatorParser.NUM, 0); }
+		public ExprNumContext(ExprContext ctx) { copyFrom(ctx); }
+	}
+	public static class ExprPrefixContext extends ExprContext {
+		public Token op;
+		public List<ExprContext> expr() {
+			return getRuleContexts(ExprContext.class);
+		}
+		public ExprContext expr(int i) {
+			return getRuleContext(ExprContext.class,i);
+		}
+		public ExprPrefixContext(ExprContext ctx) { copyFrom(ctx); }
+	}
+
+	public final ExprContext expr() throws RecognitionException {
+		ExprContext _localctx = new ExprContext(_ctx, getState());
+		enterRule(_localctx, 4, RULE_expr);
+		int _la;
+		try {
+			setState(24);
 			_errHandler.sync(this);
 			switch (_input.LA(1)) {
 			case T__0:
+			case T__1:
+			case T__2:
+			case T__3:
+				_localctx = new ExprPrefixContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(16);
-				greetings();
+				setState(19);
+				((ExprPrefixContext)_localctx).op = _input.LT(1);
+				_la = _input.LA(1);
+				if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__0) | (1L << T__1) | (1L << T__2) | (1L << T__3))) != 0)) ) {
+					((ExprPrefixContext)_localctx).op = (Token)_errHandler.recoverInline(this);
+				}
+				else {
+					if ( _input.LA(1)==Token.EOF ) matchedEOF = true;
+					_errHandler.reportMatch(this);
+					consume();
+				}
+				setState(20);
+				expr();
+				setState(21);
+				expr();
 				}
 				break;
-			case T__1:
+			case NUM:
+				_localctx = new ExprNumContext(_localctx);
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(17);
-				bye();
+				setState(23);
+				match(NUM);
 				}
 				break;
 			default:
@@ -187,111 +262,16 @@ public class HelloParser extends Parser {
 		return _localctx;
 	}
 
-	public static class GreetingsContext extends ParserRuleContext {
-		public List<TerminalNode> ID() { return getTokens(HelloParser.ID); }
-		public TerminalNode ID(int i) {
-			return getToken(HelloParser.ID, i);
-		}
-		public GreetingsContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_greetings; }
-	}
-
-	public final GreetingsContext greetings() throws RecognitionException {
-		GreetingsContext _localctx = new GreetingsContext(_ctx, getState());
-		enterRule(_localctx, 4, RULE_greetings);
-		int _la;
-		try {
-			enterOuterAlt(_localctx, 1);
-			{
-			setState(20);
-			match(T__0);
-			setState(22); 
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			do {
-				{
-				{
-				setState(21);
-				match(ID);
-				}
-				}
-				setState(24); 
-				_errHandler.sync(this);
-				_la = _input.LA(1);
-			} while ( _la==ID );
-			}
-		}
-		catch (RecognitionException re) {
-			_localctx.exception = re;
-			_errHandler.reportError(this, re);
-			_errHandler.recover(this, re);
-		}
-		finally {
-			exitRule();
-		}
-		return _localctx;
-	}
-
-	public static class ByeContext extends ParserRuleContext {
-		public List<TerminalNode> ID() { return getTokens(HelloParser.ID); }
-		public TerminalNode ID(int i) {
-			return getToken(HelloParser.ID, i);
-		}
-		public ByeContext(ParserRuleContext parent, int invokingState) {
-			super(parent, invokingState);
-		}
-		@Override public int getRuleIndex() { return RULE_bye; }
-	}
-
-	public final ByeContext bye() throws RecognitionException {
-		ByeContext _localctx = new ByeContext(_ctx, getState());
-		enterRule(_localctx, 6, RULE_bye);
-		int _la;
-		try {
-			enterOuterAlt(_localctx, 1);
-			{
-			setState(26);
-			match(T__1);
-			setState(28); 
-			_errHandler.sync(this);
-			_la = _input.LA(1);
-			do {
-				{
-				{
-				setState(27);
-				match(ID);
-				}
-				}
-				setState(30); 
-				_errHandler.sync(this);
-				_la = _input.LA(1);
-			} while ( _la==ID );
-			}
-		}
-		catch (RecognitionException re) {
-			_localctx.exception = re;
-			_errHandler.reportError(this, re);
-			_errHandler.recover(this, re);
-		}
-		finally {
-			exitRule();
-		}
-		return _localctx;
-	}
-
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\7#\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\3\2\7\2\f\n\2\f\2\16\2\17\13\2\3\2\3\2\3\3\3\3\5\3"+
-		"\25\n\3\3\4\3\4\6\4\31\n\4\r\4\16\4\32\3\5\3\5\6\5\37\n\5\r\5\16\5 \3"+
-		"\5\2\2\6\2\4\6\b\2\2\2\"\2\r\3\2\2\2\4\24\3\2\2\2\6\26\3\2\2\2\b\34\3"+
-		"\2\2\2\n\f\5\4\3\2\13\n\3\2\2\2\f\17\3\2\2\2\r\13\3\2\2\2\r\16\3\2\2\2"+
-		"\16\20\3\2\2\2\17\r\3\2\2\2\20\21\7\2\2\3\21\3\3\2\2\2\22\25\5\6\4\2\23"+
-		"\25\5\b\5\2\24\22\3\2\2\2\24\23\3\2\2\2\25\5\3\2\2\2\26\30\7\3\2\2\27"+
-		"\31\7\5\2\2\30\27\3\2\2\2\31\32\3\2\2\2\32\30\3\2\2\2\32\33\3\2\2\2\33"+
-		"\7\3\2\2\2\34\36\7\4\2\2\35\37\7\5\2\2\36\35\3\2\2\2\37 \3\2\2\2 \36\3"+
-		"\2\2\2 !\3\2\2\2!\t\3\2\2\2\6\r\24\32 ";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\n\35\4\2\t\2\4\3"+
+		"\t\3\4\4\t\4\3\2\7\2\n\n\2\f\2\16\2\r\13\2\3\2\3\2\3\3\5\3\22\n\3\3\3"+
+		"\3\3\3\4\3\4\3\4\3\4\3\4\5\4\33\n\4\3\4\2\2\5\2\4\6\2\3\3\2\3\6\2\34\2"+
+		"\13\3\2\2\2\4\21\3\2\2\2\6\32\3\2\2\2\b\n\5\4\3\2\t\b\3\2\2\2\n\r\3\2"+
+		"\2\2\13\t\3\2\2\2\13\f\3\2\2\2\f\16\3\2\2\2\r\13\3\2\2\2\16\17\7\2\2\3"+
+		"\17\3\3\2\2\2\20\22\5\6\4\2\21\20\3\2\2\2\21\22\3\2\2\2\22\23\3\2\2\2"+
+		"\23\24\7\b\2\2\24\5\3\2\2\2\25\26\t\2\2\2\26\27\5\6\4\2\27\30\5\6\4\2"+
+		"\30\33\3\2\2\2\31\33\7\7\2\2\32\25\3\2\2\2\32\31\3\2\2\2\33\7\3\2\2\2"+
+		"\5\13\21\32";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
