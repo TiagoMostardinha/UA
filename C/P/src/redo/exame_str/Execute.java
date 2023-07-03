@@ -4,7 +4,7 @@ import java.util.Scanner;
 @SuppressWarnings("CheckReturnValue")
 public class Execute extends StrLangBaseVisitor<String> {
    protected HashMap<String, String> varTable = new HashMap<String, String>();
-   Scanner sc = new Scanner(System.in);
+   protected Scanner sc = new Scanner(System.in);
 
    @Override
    public String visitStat(StrLangParser.StatContext ctx) {
@@ -41,6 +41,42 @@ public class Execute extends StrLangBaseVisitor<String> {
    }
 
    @Override
+   public String visitExprSubs(StrLangParser.ExprSubsContext ctx) {
+      String res = null;
+      String e1 = visit(ctx.e1);
+      String e2 = visit(ctx.e2);
+      String e3 = visit(ctx.e3);
+
+      res = e1.replaceAll(e2, e3);
+
+      return res;
+   }
+
+   @Override
+   public String visitExprParent(StrLangParser.ExprParentContext ctx) {
+      return visit(ctx.expr());
+   }
+
+   @Override
+   public String visitExprAddRem(StrLangParser.ExprAddRemContext ctx) {
+      String res = null;
+      String e1 = visit(ctx.e1);
+      String e2 = visit(ctx.e2);
+      String op = ctx.op.getText();
+
+      switch (op) {
+         case "+":
+            res = e1.concat(e2);
+            break;
+         case "-":
+            res = e1.replaceAll(e2, "");
+            break;
+      }
+
+      return res;
+   }
+
+   @Override
    public String visitExprInput(StrLangParser.ExprInputContext ctx) {
       String res = visit(ctx.expr());
       System.out.print(res);
@@ -52,6 +88,16 @@ public class Execute extends StrLangBaseVisitor<String> {
       }
 
       return null;
+   }
+
+   @Override
+   public String visitExprTrim(StrLangParser.ExprTrimContext ctx) {
+      String res = null;
+      String e1 = visit(ctx.expr());
+
+      res = e1.trim();
+
+      return res;
    }
 
    @Override
