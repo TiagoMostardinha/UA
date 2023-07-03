@@ -1,0 +1,16 @@
+T__0=1
+T__1=2
+T__2=3
+T__3=4
+T__4=5
+ID=6
+STRING=7
+EOL=8
+WS=9
+COMMENT=10
+ERROR=11
+':'=1
+'print'=2
+'input'=3
+'('=4
+')'=5

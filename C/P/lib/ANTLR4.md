@@ -6,6 +6,7 @@
     1. **VISITOR:** `antlr4-visitor <grammar> <visitor-name> <visitor-type>`
     2. **LISTENER:** `antlr4-listener <listener-name>`
 3. **MAIN:**    `antlr4-main -i -v <visitor.java>`
+    - **compilador**    `antlr4-main -v <visitor.java>`
 4. **BUILD:**   `antlr4-build`
 5. **RUN:**     `antlr4-run`
 

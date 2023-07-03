@@ -1,0 +1,2 @@
+print c // erro semântico
+
