@@ -1,4 +1,4 @@
-// Generated from /home/tiago/DiscoD/UA/C/P/src/redo/exame_calc/FracLang.g4 by ANTLR 4.9.2
+// Generated from FracLang.g4 by ANTLR 4.12.0
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class FracLangParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.2", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.12.0", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -92,6 +92,7 @@ public class FracLangParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ProgramContext extends ParserRuleContext {
 		public TerminalNode EOF() { return getToken(FracLangParser.EOF, 0); }
 		public List<StatContext> stat() {
@@ -104,6 +105,19 @@ public class FracLangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterProgram(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitProgram(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitProgram(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -116,7 +130,7 @@ public class FracLangParser extends Parser {
 			setState(13);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << T__8) | (1L << ID) | (1L << EOL))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 49664L) != 0)) {
 				{
 				{
 				setState(10);
@@ -142,6 +156,7 @@ public class FracLangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class StatContext extends ParserRuleContext {
 		public TerminalNode EOL() { return getToken(FracLangParser.EOL, 0); }
 		public DisplayContext display() {
@@ -154,6 +169,19 @@ public class FracLangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_stat; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterStat(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitStat(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitStat(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final StatContext stat() throws RecognitionException {
@@ -197,6 +225,7 @@ public class FracLangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprContext extends ParserRuleContext {
 		public ExprContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
@@ -208,10 +237,25 @@ public class FracLangParser extends Parser {
 			super.copyFrom(ctx);
 		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprFracContext extends ExprContext {
 		public TerminalNode FRAC() { return getToken(FracLangParser.FRAC, 0); }
 		public ExprFracContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprFrac(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprFrac(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprFrac(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprAddSubContext extends ExprContext {
 		public Token op;
 		public List<ExprContext> expr() {
@@ -221,11 +265,39 @@ public class FracLangParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public ExprAddSubContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprAddSub(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprAddSub(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprAddSub(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprReadContext extends ExprContext {
 		public TerminalNode STRING() { return getToken(FracLangParser.STRING, 0); }
 		public ExprReadContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprRead(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprRead(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprRead(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprMulDivContext extends ExprContext {
 		public Token op;
 		public List<ExprContext> expr() {
@@ -235,29 +307,98 @@ public class FracLangParser extends Parser {
 			return getRuleContext(ExprContext.class,i);
 		}
 		public ExprMulDivContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprMulDiv(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprMulDiv(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprMulDiv(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprParentContext extends ExprContext {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ExprParentContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprParent(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprParent(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprParent(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprUnaryContext extends ExprContext {
 		public Token op;
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ExprUnaryContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprUnary(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprUnary(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprUnary(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprReduceContext extends ExprContext {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
 		public ExprReduceContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprReduce(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprReduce(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprReduce(this);
+			else return visitor.visitChildren(this);
+		}
 	}
+	@SuppressWarnings("CheckReturnValue")
 	public static class ExprIDContext extends ExprContext {
 		public TerminalNode ID() { return getToken(FracLangParser.ID, 0); }
 		public ExprIDContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterExprID(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitExprID(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitExprID(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final ExprContext expr() throws RecognitionException {
@@ -431,6 +572,7 @@ public class FracLangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class DisplayContext extends ParserRuleContext {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
@@ -439,6 +581,19 @@ public class FracLangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_display; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterDisplay(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitDisplay(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitDisplay(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final DisplayContext display() throws RecognitionException {
@@ -464,6 +619,7 @@ public class FracLangParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class AssignContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(FracLangParser.ID, 0); }
 		public ExprContext expr() {
@@ -473,6 +629,19 @@ public class FracLangParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assign; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).enterAssign(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof FracLangListener ) ((FracLangListener)listener).exitAssign(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof FracLangVisitor ) return ((FracLangVisitor<? extends T>)visitor).visitAssign(this);
+			else return visitor.visitChildren(this);
+		}
 	}
 
 	public final AssignContext assign() throws RecognitionException {
@@ -520,23 +689,44 @@ public class FracLangParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\24=\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\4\6\t\6\3\2\7\2\16\n\2\f\2\16\2\21\13\2\3\2\3\2\3\3"+
-		"\3\3\5\3\27\n\3\3\3\3\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3\4\3"+
-		"\4\3\4\5\4(\n\4\3\4\3\4\3\4\3\4\3\4\3\4\7\4\60\n\4\f\4\16\4\63\13\4\3"+
-		"\5\3\5\3\5\3\6\3\6\3\6\3\6\3\6\3\6\2\3\6\7\2\4\6\b\n\2\4\3\2\3\4\3\2\7"+
-		"\b\2A\2\17\3\2\2\2\4\26\3\2\2\2\6\'\3\2\2\2\b\64\3\2\2\2\n\67\3\2\2\2"+
-		"\f\16\5\4\3\2\r\f\3\2\2\2\16\21\3\2\2\2\17\r\3\2\2\2\17\20\3\2\2\2\20"+
-		"\22\3\2\2\2\21\17\3\2\2\2\22\23\7\2\2\3\23\3\3\2\2\2\24\27\5\b\5\2\25"+
-		"\27\5\n\6\2\26\24\3\2\2\2\26\25\3\2\2\2\26\27\3\2\2\2\27\30\3\2\2\2\30"+
-		"\31\7\21\2\2\31\5\3\2\2\2\32\33\b\4\1\2\33\34\t\2\2\2\34(\5\6\4\n\35\36"+
-		"\7\5\2\2\36\37\5\6\4\2\37 \7\6\2\2 (\3\2\2\2!\"\7\t\2\2\"(\7\17\2\2#$"+
-		"\7\n\2\2$(\5\6\4\5%(\7\20\2\2&(\7\16\2\2\'\32\3\2\2\2\'\35\3\2\2\2\'!"+
-		"\3\2\2\2\'#\3\2\2\2\'%\3\2\2\2\'&\3\2\2\2(\61\3\2\2\2)*\f\b\2\2*+\t\3"+
-		"\2\2+\60\5\6\4\t,-\f\7\2\2-.\t\2\2\2.\60\5\6\4\b/)\3\2\2\2/,\3\2\2\2\60"+
-		"\63\3\2\2\2\61/\3\2\2\2\61\62\3\2\2\2\62\7\3\2\2\2\63\61\3\2\2\2\64\65"+
-		"\7\13\2\2\65\66\5\6\4\2\66\t\3\2\2\2\678\7\20\2\289\7\f\2\29:\7\r\2\2"+
-		":;\5\6\4\2;\13\3\2\2\2\7\17\26\'/\61";
+		"\u0004\u0001\u0012;\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0002"+
+		"\u0002\u0007\u0002\u0002\u0003\u0007\u0003\u0002\u0004\u0007\u0004\u0001"+
+		"\u0000\u0005\u0000\f\b\u0000\n\u0000\f\u0000\u000f\t\u0000\u0001\u0000"+
+		"\u0001\u0000\u0001\u0001\u0001\u0001\u0003\u0001\u0015\b\u0001\u0001\u0001"+
+		"\u0001\u0001\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002"+
+		"\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002"+
+		"\u0001\u0002\u0001\u0002\u0003\u0002&\b\u0002\u0001\u0002\u0001\u0002"+
+		"\u0001\u0002\u0001\u0002\u0001\u0002\u0001\u0002\u0005\u0002.\b\u0002"+
+		"\n\u0002\f\u00021\t\u0002\u0001\u0003\u0001\u0003\u0001\u0003\u0001\u0004"+
+		"\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0001\u0004\u0000\u0001"+
+		"\u0004\u0005\u0000\u0002\u0004\u0006\b\u0000\u0002\u0001\u0000\u0001\u0002"+
+		"\u0001\u0000\u0005\u0006?\u0000\r\u0001\u0000\u0000\u0000\u0002\u0014"+
+		"\u0001\u0000\u0000\u0000\u0004%\u0001\u0000\u0000\u0000\u00062\u0001\u0000"+
+		"\u0000\u0000\b5\u0001\u0000\u0000\u0000\n\f\u0003\u0002\u0001\u0000\u000b"+
+		"\n\u0001\u0000\u0000\u0000\f\u000f\u0001\u0000\u0000\u0000\r\u000b\u0001"+
+		"\u0000\u0000\u0000\r\u000e\u0001\u0000\u0000\u0000\u000e\u0010\u0001\u0000"+
+		"\u0000\u0000\u000f\r\u0001\u0000\u0000\u0000\u0010\u0011\u0005\u0000\u0000"+
+		"\u0001\u0011\u0001\u0001\u0000\u0000\u0000\u0012\u0015\u0003\u0006\u0003"+
+		"\u0000\u0013\u0015\u0003\b\u0004\u0000\u0014\u0012\u0001\u0000\u0000\u0000"+
+		"\u0014\u0013\u0001\u0000\u0000\u0000\u0014\u0015\u0001\u0000\u0000\u0000"+
+		"\u0015\u0016\u0001\u0000\u0000\u0000\u0016\u0017\u0005\u000f\u0000\u0000"+
+		"\u0017\u0003\u0001\u0000\u0000\u0000\u0018\u0019\u0006\u0002\uffff\uffff"+
+		"\u0000\u0019\u001a\u0007\u0000\u0000\u0000\u001a&\u0003\u0004\u0002\b"+
+		"\u001b\u001c\u0005\u0003\u0000\u0000\u001c\u001d\u0003\u0004\u0002\u0000"+
+		"\u001d\u001e\u0005\u0004\u0000\u0000\u001e&\u0001\u0000\u0000\u0000\u001f"+
+		" \u0005\u0007\u0000\u0000 &\u0005\r\u0000\u0000!\"\u0005\b\u0000\u0000"+
+		"\"&\u0003\u0004\u0002\u0003#&\u0005\u000e\u0000\u0000$&\u0005\f\u0000"+
+		"\u0000%\u0018\u0001\u0000\u0000\u0000%\u001b\u0001\u0000\u0000\u0000%"+
+		"\u001f\u0001\u0000\u0000\u0000%!\u0001\u0000\u0000\u0000%#\u0001\u0000"+
+		"\u0000\u0000%$\u0001\u0000\u0000\u0000&/\u0001\u0000\u0000\u0000\'(\n"+
+		"\u0006\u0000\u0000()\u0007\u0001\u0000\u0000).\u0003\u0004\u0002\u0007"+
+		"*+\n\u0005\u0000\u0000+,\u0007\u0000\u0000\u0000,.\u0003\u0004\u0002\u0006"+
+		"-\'\u0001\u0000\u0000\u0000-*\u0001\u0000\u0000\u0000.1\u0001\u0000\u0000"+
+		"\u0000/-\u0001\u0000\u0000\u0000/0\u0001\u0000\u0000\u00000\u0005\u0001"+
+		"\u0000\u0000\u00001/\u0001\u0000\u0000\u000023\u0005\t\u0000\u000034\u0003"+
+		"\u0004\u0002\u00004\u0007\u0001\u0000\u0000\u000056\u0005\u000e\u0000"+
+		"\u000067\u0005\n\u0000\u000078\u0005\u000b\u0000\u000089\u0003\u0004\u0002"+
+		"\u00009\t\u0001\u0000\u0000\u0000\u0005\r\u0014%-/";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
