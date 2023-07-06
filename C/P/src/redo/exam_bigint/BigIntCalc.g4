@@ -2,10 +2,13 @@ grammar BigIntCalc;
 
 program: stat* EOF;
 
-stat: (show | assign) EOL;
+stat: (show | if_stat|assign) EOL;
 
 show: 'show' expr;
+
 assign: expr '-' '>' ID;
+
+if_stat: 'if' expr 'then' stat* ('else' stat*)? 'fi';
 
 expr:
 	op = ('+' | '-') expr					# ExprUnary

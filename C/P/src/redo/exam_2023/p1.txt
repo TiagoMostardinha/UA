@@ -1,0 +1,7 @@
+# p1.txt
+output "1 2 3";     # writes text to standard output 
+$v1="hello";        # stores text in variable v1
+output $v1;         # writes the text stored in bariable v1 to standard output
+output abc;         # writes text to standard output
+$v1=bye;            # stores text in variable v1
+output $v1;         # writes the text stored in variable v1 to standard output

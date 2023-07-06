@@ -1,9 +1,27 @@
-n <= 2;
-m <= 1/8;
-display n * n * m ;
-display n + m :m - n ;
-display -n ;
-display -m ;
-o <= 1 -1/1;
-p <= -( o + n - m *5);
-display p ;
+#p1.txt
+
+show 100000000000000000000000000000000; #escreve um numero
+
+75436563485346234495437436 -> c; #atribui
+
+show c; # NO NEW IS GOOD NEWS
+
+show c + 23;
+
+show (c +1) mod 4;
+
+2 -> d;
+
+if (d - 2) then
+
+show 1;
+
+else
+
+show -1;
+
+fi;
+
+if( d) then
+show 100;
+fi;
