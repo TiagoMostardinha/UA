@@ -1,0 +1,97 @@
+typeValue ::= [
+    "real":"Double",
+    "integer":"Integer",
+    "text":"String",
+    "circle":"Circle",
+    "line":"Line",
+    "point":"Point",
+    "figure":"Figure",
+    default:"null"
+]
+
+module(name,stat) ::= <<
+import java.util.*;
+import java.awt.*;
+import javax.swing.*;
+public class <name> {
+    public static void main(String[] args) {
+        Gui gui = new Gui(400,400);
+        <stats(stat)>
+        
+   }
+}
+>>
+
+stats(stat) ::= <<
+<if(stat)><stat; separator= "\n"><endif>
+>>
+
+println(stat,value) ::= <<
+<stats(stat)>
+System.out.println(<value>);
+>>
+
+print(stat,value) ::= <<
+<stats(stat)>
+System.out.println(<value>);
+>>
+
+declare(type,var,value) ::= "<typeValue.(type)> <var> <if(value)> = <value><endif>;"
+
+declare2(stat,type,var,value) ::= <<
+<stats(stat)>
+<declare(type,var,value)>
+>>
+assign(stat,var,value) ::= <<
+<stats(stat)>
+<var> = <value>;
+>>
+
+binaryExpression(stat, var, e1, op, e2)::=<<
+<stats(stat)>
+<assign(null,var, [e1," ",op," ",e2])>
+>>
+
+show(stat,value) ::= <<
+<stats(stat)>
+gui<value>;
+>>
+hide(stat,value) ::= <<
+<stats(stat)>
+gui<value>;
+>>
+
+showAll(stat) ::= <<
+<stats(stat)>
+gui.showAll();
+>>
+
+hideAll(stat) ::= <<
+<stats(stat)>
+gui.hideAll();
+>>
+
+pause(stat,value) ::= <<
+<stats(stat)>
+try {
+    Thread.sleep(<value>);
+} catch (InterruptedException e) {
+    e.printStackTrace();
+}
+>>
+
+loop(pre,var,value,max,stat) ::= <<
+<stats(pre)>
+for(; <var> \<= <max>; <var>++) {
+    <stats(stat)>
+}
+>>
+
+
+
+
+
+
+
+
+
