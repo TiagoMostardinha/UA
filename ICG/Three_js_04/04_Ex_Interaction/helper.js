@@ -57,6 +57,14 @@ const helper = {
         // Give a name to the spot light
         spotLight.name = "light";
 
+        // make spotligh 
+        spotLight = new SpotLight(4,3,1,20);
+        
+        scene.coodinates.set(23,45,12);
+        scene.add(spotLight);
+
+        ambientLight = new THREE.AmbientLight({color: 0xfffff});
+
 
         // *********************************** //
         // Create renderer (with shadow map)
