@@ -1,0 +1,39 @@
+Dec 27 19:38:27.106 HYPERVISOR: Release 0.2.23-amd64/Linux (tag 2023010200)
+Dec 27 19:38:27.106 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 48659.
+Dec 27 19:38:27.114 HYPERVISOR: exec_cmd: hypervisor version 
+Dec 27 19:38:27.114 HYPERVISOR: exec_cmd: hypervisor working_dir /var/home/tiago/DiscoD/UA/AC/P/BGP_Intro/project-files/dynamips 
+Dec 27 19:38:27.114 GENERAL: working_dir=/var/home/tiago/DiscoD/UA/AC/P/BGP_Intro/project-files/dynamips
+Dec 27 19:38:27.114 HYPERVISOR: exec_cmd: hypervisor working_dir /var/home/tiago/DiscoD/UA/AC/P/BGP_Intro/project-files/dynamips/0b51c559-7b78-4981-97db-8ab6b24674fa 
+Dec 27 19:38:27.114 GENERAL: working_dir=/var/home/tiago/DiscoD/UA/AC/P/BGP_Intro/project-files/dynamips/0b51c559-7b78-4981-97db-8ab6b24674fa
+Dec 27 19:38:27.114 HYPERVISOR: exec_cmd: vm create R3 4 c7200 
+Dec 27 19:38:27.115 VM: VM R3 created.
+Dec 27 19:38:27.115 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5003 
+Dec 27 19:38:27.115 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Dec 27 19:38:27.115 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:27.115 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Dec 27 19:38:27.116 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Dec 27 19:38:27.116 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:27.116 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x62cc930c 
+Dec 27 19:38:27.116 HYPERVISOR: exec_cmd: vm set_ios R3 /var/home/tiago/GNS3/images/IOS/c7200-advipservicesk9-mz.152-4.S5.image 
+Dec 27 19:38:27.117 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca04.0f28.0000 
+Dec 27 19:38:27.117 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Dec 27 19:38:27.117 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:27.117 HYPERVISOR: exec_cmd: vm slot_remove_binding R3 0 0 
+Dec 27 19:38:27.118 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:27.118 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-2FE 
+Dec 27 19:38:27.118 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:27.118 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-2FE-TX 
+Dec 27 19:38:27.118 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:27.118 HYPERVISOR: exec_cmd: vm slot_add_binding R3 2 0 PA-2FE-TX 
+Dec 27 19:38:28.440 HYPERVISOR: exec_cmd: nio create_udp udp-93d46dcd-3aba-4e60-94b4-c38e009b03b4 10018 127.0.0.1 10019 
+Dec 27 19:38:28.649 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-93d46dcd-3aba-4e60-94b4-c38e009b03b4 
+Dec 27 19:38:28.650 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:28.753 HYPERVISOR: exec_cmd: nio create_udp udp-b3893bfe-d137-4e39-a475-5d73abc9892f 10022 127.0.0.1 10023 
+Dec 27 19:38:28.755 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 1 udp-b3893bfe-d137-4e39-a475-5d73abc9892f 
+Dec 27 19:38:28.755 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:32.478 HYPERVISOR: exec_cmd: vm set_ghost_status R3 2 
+Dec 27 19:38:32.480 HYPERVISOR: exec_cmd: vm set_ghost_file R3 /var/home/tiago/DiscoD/UA/AC/P/BGP_Intro/project-files/dynamips/c7200-advipservicesk9-mz.152-4.S5.image-256.ghost 
+Dec 27 19:38:32.481 HYPERVISOR: exec_cmd: vm get_status R3 
+Dec 27 19:38:32.483 HYPERVISOR: exec_cmd: vm set_config R3 configs/i4_startup-config.cfg 
+Dec 27 19:38:32.483 HYPERVISOR: exec_cmd: vm start R3 
+Dec 27 19:39:02.717 HYPERVISOR: exec_cmd: vm extract_config R3 
