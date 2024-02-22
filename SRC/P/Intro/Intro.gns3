@@ -5,7 +5,7 @@
     "drawing_grid_size": 25,
     "grid_size": 75,
     "name": "Intro",
-    "project_id": "ac4cf640-9cce-4f9f-8573-d20ae023094f",
+    "project_id": "44b8a673-4954-4a78-bd45-dd106f945e8e",
     "revision": 9,
     "scene_height": 1000,
     "scene_width": 2000,
@@ -20,7 +20,7 @@
         "links": [
             {
                 "filters": {},
-                "link_id": "bf699ca4-6946-4ba1-b0a3-2ce988c4a5e8",
+                "link_id": "74d5e407-3be1-46f0-b817-4d32aa30d157",
                 "link_style": {},
                 "nodes": [
                     {
@@ -29,10 +29,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": 71,
-                            "y": 37
+                            "x": 72,
+                            "y": 23
                         },
-                        "node_id": "004950a9-cae4-4f73-91f8-aa6e2982ed96",
+                        "node_id": "8f1dec6e-af54-484b-9d01-143f09ce1070",
                         "port_number": 0
                     },
                     {
@@ -41,10 +41,10 @@
                             "rotation": 0,
                             "style": "font-family: TypeWriter;font-size: 10.0;font-weight: bold;fill: #000000;fill-opacity: 1.0;",
                             "text": "e0",
-                            "x": -6,
-                            "y": 21
+                            "x": -7,
+                            "y": 35
                         },
-                        "node_id": "822ce276-9ca2-4da1-8405-161c38fa27b4",
+                        "node_id": "3bab8fef-3377-494b-8c07-6ac045bd5b2f",
                         "port_number": 0
                     }
                 ],
@@ -69,7 +69,7 @@
                 },
                 "locked": false,
                 "name": "PC1",
-                "node_id": "004950a9-cae4-4f73-91f8-aa6e2982ed96",
+                "node_id": "8f1dec6e-af54-484b-9d01-143f09ce1070",
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -77,8 +77,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -399,
-                "y": -176,
+                "x": -383,
+                "y": -3,
                 "z": 1
             },
             {
@@ -98,7 +98,7 @@
                 },
                 "locked": false,
                 "name": "PC2",
-                "node_id": "822ce276-9ca2-4da1-8405-161c38fa27b4",
+                "node_id": "3bab8fef-3377-494b-8c07-6ac045bd5b2f",
                 "node_type": "vpcs",
                 "port_name_format": "Ethernet{0}",
                 "port_segment_size": 0,
@@ -106,8 +106,8 @@
                 "symbol": ":/symbols/vpcs_guest.svg",
                 "template_id": "19021f99-e36f-394d-b4a1-8aaa902ab9cc",
                 "width": 65,
-                "x": -52,
-                "y": -102,
+                "x": 163,
+                "y": -79,
                 "z": 1
             }
         ]
