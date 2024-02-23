@@ -1,7 +1,0 @@
-hello Tiago
-bye Joao
-
-# Comment 
-
-hello o meu nome e Tiago
-bye Joao ate a proxima

@@ -1,2 +1,0 @@
-dimension integer NMEC [nmec];
-dimension real Grade [val];
